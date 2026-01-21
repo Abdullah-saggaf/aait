@@ -59,33 +59,16 @@ FROM php:8.3-fpm-alpine
 LABEL maintainer="Laravel Docker for Render.com"
 LABEL description="Laravel application with Nginx and PHP-FPM"
 
-# Install system dependencies and PHP extensions
+# System + build deps for PHP extensions
 RUN apk add --no-cache \
-    nginx \
-    supervisor \
-    curl \
-    libzip-dev \
-    libxml2-dev \
-    oniguruma-dev \
-    icu-dev \
-    freetype-dev \
-    libjpeg-turbo-dev \
-    libpng-dev \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install -j$(nproc) \
-        pdo \
-        pdo_mysql \
-        mbstring \
-        bcmath \
-        ctype \
-        fileinfo \
-        tokenizer \
-        xml \
-        zip \
-        gd \
-        intl \
-        opcache \
-    && rm -rf /var/cache/apk/*
+    nginx supervisor bash curl \
+    icu-dev oniguruma-dev libzip-dev libxml2-dev \
+    freetype-dev libjpeg-turbo-dev libpng-dev \
+    $PHPIZE_DEPS linux-headers \
+  && docker-php-ext-configure gd --with-freetype --with-jpeg \
+  && docker-php-ext-install -j"$(nproc)" \
+    mbstring intl zip opcache gd pdo pdo_sqlite \
+  && rm -rf /var/cache/apk/*
 
 # Configure PHP for production
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
