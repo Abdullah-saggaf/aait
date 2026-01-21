@@ -59,16 +59,46 @@ FROM php:8.3-fpm-alpine
 LABEL maintainer="Laravel Docker for Render.com"
 LABEL description="Laravel application with Nginx and PHP-FPM"
 
-# System + build deps for PHP extensions
+# Install system dependencies
 RUN apk add --no-cache \
-    nginx supervisor bash curl \
-    icu-dev oniguruma-dev libzip-dev libxml2-dev \
-    freetype-dev libjpeg-turbo-dev libpng-dev \
-    $PHPIZE_DEPS linux-headers \
-  && docker-php-ext-configure gd --with-freetype --with-jpeg \
-  && docker-php-ext-install -j"$(nproc)" \
-    mbstring intl zip opcache gd pdo pdo_sqlite \
-  && rm -rf /var/cache/apk/*
+    nginx \
+    supervisor \
+    bash \
+    curl \
+    sqlite-libs
+
+# Install build dependencies and PHP extensions
+RUN apk add --no-cache --virtual .build-deps \
+    autoconf \
+    gcc \
+    g++ \
+    make \
+    linux-headers \
+    icu-dev \
+    oniguruma-dev \
+    libzip-dev \
+    libxml2-dev \
+    freetype-dev \
+    libjpeg-turbo-dev \
+    libpng-dev \
+    sqlite-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) \
+        mbstring \
+        intl \
+        zip \
+        opcache \
+        gd \
+        pdo \
+        pdo_sqlite \
+    && apk add --no-cache \
+        icu-libs \
+        libzip \
+        freetype \
+        libjpeg-turbo \
+        libpng \
+    && apk del .build-deps \
+    && rm -rf /var/cache/apk/* /tmp/*
 
 # Configure PHP for production
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
