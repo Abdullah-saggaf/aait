@@ -4,9 +4,16 @@
 @section('description', 'Quality management system certification ensuring compliance with ISO and industry standards.')
 
 @section('content')
-<section class="py-5">
+<!-- Page Hero -->
+<section class="page-hero">
     <div class="container">
-        <h1 class="section-title mb-5">System Certification</h1>
+        <h1 class="mb-3">System Certification</h1>
+        <p class="lead mb-0">Certification of quality management systems and operational procedures to ensure compliance with ISO and industry-specific standards.</p>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
         
         <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -45,7 +52,7 @@
                 </ul>
                 
                 <!-- Certificate Validation Demo -->
-                <div class="card border-0 shadow-sm mt-5">
+                <div class="card neo-card">
                     <div class="card-body p-4">
                         <h5 class="text-neo-navy mb-3"><i class="bi bi-shield-check text-neo-lime me-2"></i>Validate System Certificate</h5>
                         <p class="mb-3">Enter the certificate ID to verify authenticity (Demo Feature)</p>

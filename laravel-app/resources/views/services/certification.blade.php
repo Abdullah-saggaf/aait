@@ -4,19 +4,19 @@
 @section('description', 'System, equipment, and personal certification services ensuring compliance with industry standards.')
 
 @section('content')
-<section class="py-5">
+<!-- Page Hero -->
+<section class="page-hero">
     <div class="container">
-        <h1 class="section-title mb-5">Certification Services</h1>
-        
-        <div class="row mb-5">
-            <div class="col-lg-8 mx-auto">
-                <p class="lead text-center">Professional certification services for systems, equipment, and personnel, ensuring compliance with industry standards and regulations.</p>
-            </div>
-        </div>
-        
-        <div class="row g-4 mb-5">
+        <h1 class="mb-3">Certification Services</h1>
+        <p class="lead mb-0">Professional certification services for systems, equipment, and personnel, ensuring compliance with industry standards and regulations.</p>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row g-4">
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow">
+                <div class="card neo-card h-100">
                     <div class="card-body text-center p-4">
                         <i class="bi bi-diagram-3 text-neo-lime" style="font-size: 3.5rem;"></i>
                         <h4 class="text-neo-navy mt-3 mb-3">System Certification</h4>
@@ -27,7 +27,7 @@
             </div>
             
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow">
+                <div class="card neo-card h-100">
                     <div class="card-body text-center p-4">
                         <i class="bi bi-gear-wide-connected text-neo-lime" style="font-size: 3.5rem;"></i>
                         <h4 class="text-neo-navy mt-3 mb-3">Equipment Certification</h4>
@@ -38,7 +38,7 @@
             </div>
             
             <div class="col-md-4">
-                <div class="card h-100 border-0 shadow">
+                <div class="card neo-card h-100">
                     <div class="card-body text-center p-4">
                         <i class="bi bi-person-badge text-neo-lime" style="font-size: 3.5rem;"></i>
                         <h4 class="text-neo-navy mt-3 mb-3">Personal Certification</h4>
@@ -48,14 +48,18 @@
                 </div>
             </div>
         </div>
-        
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h3 class="text-neo-navy mb-4">Benefits of Certification</h3>
                 
                 <div class="row g-3 mb-5">
                     <div class="col-md-6">
-                        <div class="card border-0 h-100" style="background: rgba(176, 210, 54, 0.1);">
+                        <div class="card neo-card h-100 bg-white border">
                             <div class="card-body">
                                 <h6 class="text-neo-navy"><i class="bi bi-shield-check text-neo-lime me-2"></i>Compliance Assurance</h6>
                                 <p class="small mb-0">Demonstrates adherence to industry standards and regulatory requirements</p>
@@ -63,7 +67,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card border-0 h-100" style="background: rgba(176, 210, 54, 0.1);">
+                        <div class="card neo-card h-100 bg-white border">
                             <div class="card-body">
                                 <h6 class="text-neo-navy"><i class="bi bi-trophy text-neo-lime me-2"></i>Enhanced Credibility</h6>
                                 <p class="small mb-0">Increases trust and confidence among clients and stakeholders</p>
@@ -71,7 +75,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card border-0 h-100" style="background: rgba(176, 210, 54, 0.1);">
+                        <div class="card neo-card h-100 bg-white border">
                             <div class="card-body">
                                 <h6 class="text-neo-navy"><i class="bi bi-graph-up text-neo-lime me-2"></i>Quality Improvement</h6>
                                 <p class="small mb-0">Promotes continuous improvement in processes and operations</p>
@@ -79,7 +83,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card border-0 h-100" style="background: rgba(176, 210, 54, 0.1);">
+                        <div class="card neo-card h-100 bg-white border">
                             <div class="card-body">
                                 <h6 class="text-neo-navy"><i class="bi bi-globe text-neo-lime me-2"></i>Market Access</h6>
                                 <p class="small mb-0">Opens opportunities for contracts requiring certified systems/personnel</p>
@@ -88,7 +92,7 @@
                     </div>
                 </div>
                 
-                <div class="card border-0 shadow-sm bg-neo-navy text-neo-light">
+                <div class="card neo-card bg-neo-navy text-neo-light">
                     <div class="card-body p-4">
                         <div class="row align-items-center">
                             <div class="col-md-8">

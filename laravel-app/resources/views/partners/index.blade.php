@@ -4,15 +4,21 @@
 @section('description', 'We proudly serve leading organizations across Saudi Arabia including Saudi Aramco, SABIC, and other major industrial companies.')
 
 @section('content')
-<section class="py-5">
+<!-- Page Hero -->
+<section class="page-hero">
     <div class="container">
-        <h1 class="section-title text-center mb-4">Our Trusted Partners</h1>
-        <p class="text-center lead mb-5">We proudly serve leading organizations across Saudi Arabia, providing calibration and inspection services to small, medium, and large scale industries.</p>
+        <h1 class="mb-3">Our Trusted Partners</h1>
+        <p class="lead mb-0">We proudly serve leading organizations across Saudi Arabia, providing calibration and inspection services to small, medium, and large scale industries.</p>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
         
         <div class="row g-4">
             @foreach($partners as $partner)
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card neo-card h-100">
                     <div class="card-body text-center p-4">
                         <div class="mb-3" style="height: 60px; display: flex; align-items: center; justify-content: center;">
                             <i class="bi bi-building text-neo-lime" style="font-size: 3rem;"></i>
@@ -23,10 +29,14 @@
             </div>
             @endforeach
         </div>
-        
-        <div class="row mt-5">
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-8 mx-auto">
-                <div class="card border-0 shadow-sm bg-neo-navy text-neo-light">
+                <div class="card neo-card bg-neo-navy text-neo-light">
                     <div class="card-body p-4">
                         <h4 class="text-neo-lime mb-3">Become a Partner</h4>
                         <p>We are continuously expanding our network of partners. If your organization requires reliable calibration and inspection services, we would be pleased to discuss how we can support your operations.</p>
@@ -35,8 +45,12 @@
                 </div>
             </div>
         </div>
-        
-        <div class="row mt-5">
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h3 class="text-neo-navy text-center mb-4">Industries We Serve</h3>
                 <div class="row g-3">

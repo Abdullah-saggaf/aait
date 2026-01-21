@@ -1,17 +1,19 @@
 @extends('layouts.app')
 
 @section('title', 'Contact Us')
-@section('description', 'Get in touch with National Engineering Organization for calibration, inspection, and certification services across Saudi Arabia.')
+@section('description', 'Get in touch with AAIT for calibration, inspection, and certification services across Saudi Arabia.')
 
 @section('content')
-<section class="py-5">
+<!-- Page Hero -->
+<section class="page-hero">
     <div class="container">
-        <h1 class="section-title mb-2">Contact Us</h1>
-        
-        <h3 class="text-neo-navy mb-5">We're happy to help!</h3>
-        
-        <hr class="mb-5" style="border-color: var(--neo-navy); opacity: 0.3;">
-        
+        <h1 class="mb-3">Contact Us</h1>
+        <p class="lead mb-0">We're happy to help!</p>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
         <div class="row g-5 mb-5">
             <!-- Left Column -->
             <div class="col-md-6">

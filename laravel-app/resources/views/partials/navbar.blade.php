@@ -1,18 +1,16 @@
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
-            <img src="{{ asset('images/logo4.svg') }}" alt="National Engineering Organization" height="40" class="d-inline-block align-text-top">
+            <img src="{{ asset('images/logo5.svg') }}" alt="AAIT" height="40" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <!-- About Us Single Link -->
+                <!-- About Us -->
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('about.index') ? 'active' : '' }}" href="{{ route('about.index') }}">
-                        About Us
-                    </a>
+                    <a class="nav-link {{ request()->routeIs('about.*') ? 'active' : '' }}" href="{{ route('about.index') }}">About Us</a>
                 </li>
                 
                 <!-- Scope & Services Dropdown -->

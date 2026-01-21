@@ -97,7 +97,7 @@
                         </div>
                         <h4 class="text-neo-navy mb-3">ISO Traceable Reporting</h4>
                         <p class="mb-3">Comprehensive calibration certificates with full traceability to NIST, NPL (UK), PTB, and national laboratories.</p>
-                        <a href="{{ route('about.quality') }}" class="btn btn-outline-primary">Learn More</a>
+                        <a href="{{ route('about.index') }}" class="btn btn-outline-primary">Learn More</a>
                     </div>
                 </div>
             </div>

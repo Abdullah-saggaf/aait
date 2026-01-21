@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Calibration & Inspection Services') - National Engineering Organization</title>
+    <title>@yield('title', 'Calibration & Inspection Services') - AAIT</title>
     <meta name="description" content="@yield('description', 'ISO/IEC 17025:2005 Calibration & Inspection Services across Saudi Arabia. Serving industries including Saudi Aramco.')">
     
     <!-- Bootstrap 5 CSS -->

@@ -12,14 +12,6 @@ Route::get('/about', function () {
     return view('about.index');
 })->name('about.index');
 
-Route::get('/about/mission', function () {
-    return view('about.mission');
-})->name('about.mission');
-
-Route::get('/about/quality', function () {
-    return view('about.quality');
-})->name('about.quality');
-
 // Services
 Route::get('/services/calibration', function () {
     return view('services.calibration');

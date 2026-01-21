@@ -1,7 +1,535 @@
 @extends('layouts.app')
 
+@section('title', 'About Us - AAIT Lab & Instrumentation Services')
+@section('description', 'ISO/IEC 17025:2005 accredited calibration laboratory serving Saudi Arabia since 2005. ARAMCO-approved team delivering precision calibration services.')
+
+@section('content')
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="mb-3">About Us</h1>
+        <p class="lead mb-0">A journey of precision and excellence serving Saudi Arabia's most critical industries with ISO/IEC 17025:2005 accredited calibration services.</p>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h2 class="section-title mb-4">Our Story</h2>
+                <h4 class="text-neo-navy mb-4">Founded in 2005</h4>
+                <p class="mb-3">AAIT (Advanced Analytical & Inspection Testing) was originally established in 2005 as a family-owned firm working exclusively for Saudi Aramco under the banner of Metals Services Company.</p>
+                <p class="mb-3">What began as a dedicated calibration service provider has grown steadily, expanding our expertise across mechanical, electro-technical, and thermal measuring instruments. Our commitment to precision and quality has made us a trusted partner for industries throughout Saudi Arabia.</p>
+                <p class="mb-4">On April 24th, 2014, under new ownership, AAIT was formally reorganized as a wholly-owned Saudi Arabian Proprietorship Organization, maintaining our legacy of excellence while embracing modern standards and expanding our service capabilities.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="card neo-card border-0">
+                    <div class="card-body p-5 bg-neo-navy text-white">
+                        <div class="text-center">
+                            <i class="bi bi-building text-neo-lime" style="font-size: 5rem;"></i>
+                            <h3 class="mt-4 mb-3">Established 2005</h3>
+                            <p class="mb-4">Over 19 years of calibration excellence</p>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="border border-neo-lime rounded p-3">
+                                        <h4 class="text-neo-lime mb-1">2005</h4>
+                                        <small>Foundation</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="border border-neo-lime rounded p-3">
+                                        <h4 class="text-neo-lime mb-1">2014</h4>
+                                        <small>Reorganization</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="border border-neo-lime rounded p-3">
+                                        <h4 class="text-neo-lime mb-1">500+</h4>
+                                        <small>Projects</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="border border-neo-lime rounded p-3">
+                                        <h4 class="text-neo-lime mb-1">100%</h4>
+                                        <small>ISO Compliant</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Journey Timeline -->
+<section class="py-5">
+    <div class="container">
+        <h3 class="text-center text-neo-navy mb-5">Our Journey</h3>
+        <p class="text-center mb-5">From Vision to Reality</p>
+        
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card neo-card h-100 text-center">
+                    <div class="card-body p-4">
+                        <div class="display-4 fw-bold text-neo-lime mb-3">1</div>
+                        <h5 class="text-neo-navy mb-3">2005 - Foundation</h5>
+                        <p class="mb-0">Established as exclusive calibration partner for Saudi Aramco</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card neo-card h-100 text-center">
+                    <div class="card-body p-4">
+                        <div class="display-4 fw-bold text-neo-lime mb-3">2</div>
+                        <h5 class="text-neo-navy mb-3">Growth & Expansion</h5>
+                        <p class="mb-0">Steady growth across mechanical, electrical, and thermal calibration</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card neo-card h-100 text-center">
+                    <div class="card-body p-4">
+                        <div class="display-4 fw-bold text-neo-lime mb-3">3</div>
+                        <h5 class="text-neo-navy mb-3">2014 - Reorganization</h5>
+                        <p class="mb-0">New ownership, expanded capabilities, ISO/IEC 17025:2005 alignment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card neo-card h-100 text-center">
+                    <div class="card-body p-4">
+                        <div class="display-4 fw-bold text-neo-lime mb-3">4</div>
+                        <h5 class="text-neo-navy mb-3">Today & Beyond</h5>
+                        <p class="mb-0">Industry leader serving Saudi Arabia's critical sectors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Values -->
+<section id="mission-values" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Mission & Core Values</h2>
+        
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <h4 class="text-neo-navy mb-4">Our Mission Statement</h4>
+                <blockquote class="border-start border-5 border-neo-lime ps-4 py-3 bg-neo-light">
+                    <p class="mb-0 fst-italic">"To deliver exceptional calibration and inspection services that drive operational excellence, safety, and reliability across Saudi Arabia's critical industries, while building lasting partnerships founded on trust, precision, and unwavering quality in accordance with ISO/IEC 17025:2005 standards."</p>
+                </blockquote>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <i class="bi bi-award-fill text-neo-lime fs-2 me-3"></i>
+                            <div>
+                                <h5 class="text-neo-navy mb-2">Excellence</h5>
+                                <p class="mb-0">Commitment to the highest standards in calibration quality, service delivery, and customer satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <i class="bi bi-shield-check text-neo-lime fs-2 me-3"></i>
+                            <div>
+                                <h5 class="text-neo-navy mb-2">Reliability</h5>
+                                <p class="mb-0">Dependable solutions with full traceability that our clients can trust for their critical operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <i class="bi bi-lightbulb-fill text-neo-lime fs-2 me-3"></i>
+                            <div>
+                                <h5 class="text-neo-navy mb-2">Innovation</h5>
+                                <p class="mb-0">Embracing cutting-edge calibration technologies and measurement advancements to deliver superior solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex">
+                            <i class="bi bi-people-fill text-neo-lime fs-2 me-3"></i>
+                            <div>
+                                <h5 class="text-neo-navy mb-2">Partnership</h5>
+                                <p class="mb-0">Building long-term relationships based on mutual trust, transparency, and shared success.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Core Capabilities -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Core Capabilities & Competitive Advantages</h2>
+        <p class="text-center mb-5">Our comprehensive capabilities and ISO/IEC 17025:2005 alignment position us as the preferred calibration service provider, delivering value through expertise, quality, and reliability.</p>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="bi bi-gear-wide-connected text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-4 mb-3">Engineering Excellence</h5>
+                        <p class="mb-3">ISO/IEC 17025:2005 quality management ensuring international compliance standards</p>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>ISO/IEC 17025:2005 Aligned</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Technical Design Support</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Custom Calibration Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="bi bi-globe text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-4 mb-3">Global Traceability</h5>
+                        <p class="mb-3">Full traceability to international measurement standards</p>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>NIST Traceable</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>NPL (UK) Standards</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>PTB & National Labs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="bi bi-tools text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-4 mb-3">Technical Support</h5>
+                        <p class="mb-3">Comprehensive support from onsite calibration to maintenance</p>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>ARAMCO Approved Team</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>On-site Calibration</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Equipment Commissioning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4 text-center">
+                        <i class="bi bi-clipboard-check text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-4 mb-3">Quality Assurance</h5>
+                        <p class="mb-3">Rigorous testing and quality control for all calibrations</p>
+                        <ul class="list-unstyled small">
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Modern Equipment</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Quality Certificates</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Flexible Turnaround</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Industries We Serve -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Industries We Serve</h2>
+        <p class="text-center mb-5">Supporting Saudi Arabia's critical industrial sectors with specialized calibration solutions and technical expertise.</p>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="display-6 text-neo-lime me-3">1</div>
+                            <div>
+                                <h5 class="text-neo-navy mb-2">Oil & Gas</h5>
+                                <p class="mb-2">Upstream, midstream, and downstream operations support</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="display-6 text-neo-lime me-3">2</div>
+                            <div>
+                                <h5 class="text-neo-navy mb-2">Petrochemical</h5>
+                                <p class="mb-2">Specialized equipment for chemical processing facilities</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="display-6 text-neo-lime me-3">3</div>
+                            <div>
+                                <h5 class="text-neo-navy mb-2">Manufacturing</h5>
+                                <p class="mb-2">Precision measurement for production facilities</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="display-6 text-neo-lime me-3">4</div>
+                            <div>
+                                <h5 class="text-neo-navy mb-2">Power Generation</h5>
+                                <p class="mb-2">Critical infrastructure for utilities and energy sectors</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="display-6 text-neo-lime me-3">5</div>
+                            <div>
+                                <h5 class="text-neo-navy mb-2">Mining Operations</h5>
+                                <p class="mb-2">Robust calibration solutions for extraction and processing</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="display-6 text-neo-lime me-3">6</div>
+                            <div>
+                                <h5 class="text-neo-navy mb-2">Water Treatment</h5>
+                                <p class="mb-2">Quality assurance for water and wastewater facilities</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Impact Stats -->
+        <div class="row g-4 mt-5 text-center">
+            <div class="col-6 col-md-3">
+                <div class="p-4 bg-neo-light rounded">
+                    <h3 class="text-neo-navy fw-bold mb-2">6</h3>
+                    <p class="mb-0">Industrial Sectors</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-4 bg-neo-light rounded">
+                    <h3 class="text-neo-navy fw-bold mb-2">500+</h3>
+                    <p class="mb-0">Projects Completed</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-4 bg-neo-light rounded">
+                    <h3 class="text-neo-navy fw-bold mb-2">19+</h3>
+                    <p class="mb-0">Years Experience</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-4 bg-neo-light rounded">
+                    <h3 class="text-neo-navy fw-bold mb-2">100%</h3>
+                    <p class="mb-0">Quality Commitment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Calibration Scope Portfolio -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Comprehensive Calibration Portfolio</h2>
+        <p class="text-center mb-5">Our extensive range of calibration services provides complete measurement solutions across all operational requirements in accordance with ISO/IEC 17025:2005.</p>
+        
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <h5 class="text-neo-navy mb-3"><i class="bi bi-speedometer text-neo-lime me-2"></i>Pressure Calibration</h5>
+                        <p class="mb-3">Precision calibration of pressure measuring instruments</p>
+                        <ul class="list-unstyled small">
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Pressure Gauges</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Pressure Transmitters</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Pressure Switches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <h5 class="text-neo-navy mb-3"><i class="bi bi-thermometer-half text-neo-lime me-2"></i>Temperature & Humidity</h5>
+                        <p class="mb-3">Thermal measurement and environmental monitoring</p>
+                        <ul class="list-unstyled small">
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Thermocouples & RTDs</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Temperature Indicators</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Humidity Sensors</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <h5 class="text-neo-navy mb-3"><i class="bi bi-lightning text-neo-lime me-2"></i>Electrical Calibration</h5>
+                        <p class="mb-3">Electrical measurement instrument calibration</p>
+                        <ul class="list-unstyled small">
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Multimeters & DMMs</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Clamp Meters</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Insulation Testers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <h5 class="text-neo-navy mb-3"><i class="bi bi-rulers text-neo-lime me-2"></i>Dimensional Calibration</h5>
+                        <p class="mb-3">Precision dimensional measurement tools</p>
+                        <ul class="list-unstyled small">
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Micrometers & Calipers</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Dial Indicators</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Gauge Blocks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <h5 class="text-neo-navy mb-3"><i class="bi bi-box text-neo-lime me-2"></i>Mass & Torque</h5>
+                        <p class="mb-3">Weight and torque measurement calibration</p>
+                        <ul class="list-unstyled small">
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Balances & Scales</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Torque Wrenches</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Weight Sets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card neo-card h-100">
+                    <div class="card-body p-4">
+                        <h5 class="text-neo-navy mb-3"><i class="bi bi-broadcast text-neo-lime me-2"></i>Specialized Calibration</h5>
+                        <p class="mb-3">Advanced and onsite calibration services</p>
+                        <ul class="list-unstyled small">
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Control Valves</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Acoustical Instruments</li>
+                            <li class="mb-1"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Onsite Commissioning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quality Assurance -->
+<section id="quality-assurance" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Quality Assurance & Standards</h2>
+        <p class="text-center mb-5">Our commitment to excellence is demonstrated through rigorous quality management systems, international standards compliance, and comprehensive calibration protocols.</p>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card neo-card h-100 text-center">
+                    <div class="card-body p-4">
+                        <i class="bi bi-patch-check-fill text-neo-lime" style="font-size: 3.5rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">ISO/IEC 17025:2005</h5>
+                        <p class="mb-0">Internationally recognized quality management ensuring consistent calibration quality and service.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card neo-card h-100 text-center">
+                    <div class="card-body p-4">
+                        <i class="bi bi-shield-check text-neo-lime" style="font-size: 3.5rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">ARAMCO Approved</h5>
+                        <p class="mb-0">Qualified and experienced technical staff with official ARAMCO approvals for calibration services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card neo-card h-100 text-center">
+                    <div class="card-body p-4">
+                        <i class="bi bi-globe2 text-neo-lime" style="font-size: 3.5rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Global Traceability</h5>
+                        <p class="mb-0">Full traceability to NIST, NPL (UK), PTB, or national laboratories with documented certificates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card neo-card bg-neo-light border-0">
+                    <div class="card-body p-5">
+                        <h4 class="text-neo-navy mb-4">Our Quality Promise</h4>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <h6 class="text-neo-navy mb-2"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Performance Guarantee</h6>
+                                <p class="mb-0 small">All calibrations meet or exceed specified accuracy parameters with documented test results.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-neo-navy mb-2"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Technical Documentation</h6>
+                                <p class="mb-0 small">Comprehensive calibration certificates with complete measurement data and uncertainty analysis.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-neo-navy mb-2"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Flexible Turnaround</h6>
+                                <p class="mb-0 small">Competitive pricing with flexible turnaround times tailored to client operational demands.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-neo-navy mb-2"><i class="bi bi-check-circle-fill text-neo-lime me-2"></i>Ongoing Support</h6>
+                                <p class="mb-0 small">Technical support with expert engineers available for consultation and troubleshooting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-neo-navy text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="mb-3">Ready to discuss your calibration needs?</h2>
+                <p class="lead mb-0">We're here to help with precision calibration services tailored to your industry requirements.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                <a href="{{ route('contact.index') }}" class="btn btn-primary btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+@endsection
+
 @section('title', 'About Us')
-@section('description', 'National Engineering Organization provides ISO/IEC 17025:2005 calibration services across Saudi Arabia. Established 2005, serving Saudi Aramco and major industries.')
+@section('description', 'AAIT provides ISO/IEC 17025:2005 calibration services across Saudi Arabia. Established 2005, serving Saudi Aramco and major industries.')
 
 @section('content')
 <section class="py-5">
@@ -10,10 +538,10 @@
         
         <div class="row mb-5">
             <div class="col-lg-8">
-                <p class="lead">National Engineering Organization provides comprehensive calibration services for Mechanical, Electro-Technical, and Thermal measuring & source instruments, aligned with ISO/IEC-17025:2005 standards.</p>
+                <p class="lead">AAIT provides comprehensive calibration services for Mechanical, Electro-Technical, and Thermal measuring & source instruments, aligned with ISO/IEC-17025:2005 standards.</p>
                 
                 <h3 class="text-neo-navy mt-4 mb-3">Our History</h3>
-                <p>Originally established in <strong>2005</strong> as a family-owned firm working exclusively for Saudi Aramco under the name Metals Services Company. On <strong>24 April 2014</strong>, National Engineering Organization was established as a Proprietorship Organization under new ownership.</p>
+                <p>Originally established in <strong>2005</strong> as a family-owned firm working exclusively for Saudi Aramco under the name Metals Services Company. On <strong>24 April 2014</strong>, AAIT was established as a Proprietorship Organization under new ownership.</p>
                 
                 <p>Today, we are a wholly owned Saudi Arabian organization serving small, medium, and large scale industries across the Kingdom of Saudi Arabia, including our continued partnership with Saudi Aramco.</p>
                 
@@ -67,7 +595,7 @@
                         <i class="bi bi-bullseye text-neo-lime" style="font-size: 3rem;"></i>
                         <h5 class="card-title text-neo-navy mt-3">Our Mission</h5>
                         <p class="card-text">Learn about our aims and mission</p>
-                        <a href="{{ route('about.mission') }}" class="btn btn-outline-primary">Read More</a>
+                        <a href="#mission-values" class="btn btn-outline-primary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +605,7 @@
                         <i class="bi bi-shield-check text-neo-lime" style="font-size: 3rem;"></i>
                         <h5 class="card-title text-neo-navy mt-3">Quality Policy</h5>
                         <p class="card-text">Our commitment to quality</p>
-                        <a href="{{ route('about.quality') }}" class="btn btn-outline-primary">Read More</a>
+                        <a href="#quality-assurance" class="btn btn-outline-primary">Read More</a>
                     </div>
                 </div>
             </div>

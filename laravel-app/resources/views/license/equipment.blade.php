@@ -4,9 +4,16 @@
 @section('description', 'Certification of measuring instruments and equipment verifying accuracy, compliance, and proper calibration status.')
 
 @section('content')
-<section class="py-5">
+<!-- Page Hero -->
+<section class="page-hero">
     <div class="container">
-        <h1 class="section-title mb-5">Equipment Certification</h1>
+        <h1 class="mb-3">Equipment Certification</h1>
+        <p class="lead mb-0">Certification of measuring instruments and equipment verifying accuracy, compliance, and proper calibration status.</p>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
         
         <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -18,7 +25,7 @@
                 <h3 class="text-neo-navy mt-5 mb-3">Certification Process</h3>
                 <div class="row g-3 mb-4">
                     <div class="col-md-6">
-                        <div class="card h-100 border-0" style="background: rgba(176, 210, 54, 0.1);">
+                        <div class="card neo-card h-100 bg-white border">
                             <div class="card-body">
                                 <div class="fw-bold text-neo-navy mb-2">1. Initial Assessment</div>
                                 <p class="small mb-0">Review equipment specifications and requirements</p>
@@ -26,7 +33,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card h-100 border-0" style="background: rgba(176, 210, 54, 0.1);">
+                        <div class="card neo-card h-100 bg-white border">
                             <div class="card-body">
                                 <div class="fw-bold text-neo-navy mb-2">2. Calibration</div>
                                 <p class="small mb-0">Perform comprehensive calibration procedures</p>
@@ -34,7 +41,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card h-100 border-0" style="background: rgba(176, 210, 54, 0.1);">
+                        <div class="card neo-card h-100 bg-white border">
                             <div class="card-body">
                                 <div class="fw-bold text-neo-navy mb-2">3. Verification</div>
                                 <p class="small mb-0">Verify compliance with accuracy requirements</p>
@@ -42,7 +49,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card h-100 border-0" style="background: rgba(176, 210, 54, 0.1);">
+                        <div class="card neo-card h-100 bg-white border">
                             <div class="card-body">
                                 <div class="fw-bold text-neo-navy mb-2">4. Certification</div>
                                 <p class="small mb-0">Issue certification documentation</p>
@@ -100,6 +107,25 @@
                     <li>Certification seal/label</li>
                     <li>Next calibration due date</li>
                 </ul>
+                
+                <!-- Certificate Validation Demo -->
+                <div class="card neo-card mt-5">
+                    <div class="card-body p-4">
+                        <h5 class="text-neo-navy mb-3"><i class="bi bi-shield-check text-neo-lime me-2"></i>Validate Equipment Certificate</h5>
+                        <p class="mb-3">Enter the certificate ID to verify authenticity (Demo Feature)</p>
+                        <div class="row g-3">
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" placeholder="Enter Certificate ID (e.g. EQP-2024-00123)" id="certId">
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-primary w-100 validate-certificate-btn">
+                                    <i class="bi bi-search me-2"></i>Validate
+                                </button>
+                            </div>
+                        </div>
+                        <div class="validation-alert-container"></div>
+                    </div>
+                </div>
                 
                 <div class="card border-0 shadow-sm mt-5 bg-neo-navy text-neo-light">
                     <div class="card-body p-4">

@@ -4,19 +4,19 @@
 @section('description', 'Professional training programs for calibration, measurement techniques, and quality management.')
 
 @section('content')
-<section class="py-5">
+<!-- Page Hero -->
+<section class="page-hero">
     <div class="container">
-        <h1 class="section-title mb-5">Training Services</h1>
-        
-        <div class="row mb-5">
-            <div class="col-lg-8 mx-auto text-center">
-                <p class="lead">Professional training programs designed to enhance the skills and knowledge of your technical staff in calibration, measurement, and quality management.</p>
-            </div>
-        </div>
-        
-        <div class="row g-4 mb-5">
+        <h1 class="mb-3">Training Services</h1>
+        <p class="lead mb-0">Professional training programs designed to enhance the skills and knowledge of your technical staff in calibration, measurement, and quality management.</p>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row g-4">
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card neo-card h-100">
                     <div class="card-body">
                         <i class="bi bi-speedometer text-neo-lime" style="font-size: 2.5rem;"></i>
                         <h5 class="text-neo-navy mt-3">Calibration Fundamentals</h5>
@@ -32,7 +32,7 @@
             </div>
             
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card neo-card h-100">
                     <div class="card-body">
                         <i class="bi bi-thermometer text-neo-lime" style="font-size: 2.5rem;"></i>
                         <h5 class="text-neo-navy mt-3">Temperature Calibration</h5>
@@ -48,7 +48,7 @@
             </div>
             
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card neo-card h-100">
                     <div class="card-body">
                         <i class="bi bi-lightning text-neo-lime" style="font-size: 2.5rem;"></i>
                         <h5 class="text-neo-navy mt-3">Electrical Calibration</h5>
@@ -64,7 +64,7 @@
             </div>
             
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card neo-card h-100">
                     <div class="card-body">
                         <i class="bi bi-rulers text-neo-lime" style="font-size: 2.5rem;"></i>
                         <h5 class="text-neo-navy mt-3">Dimensional Metrology</h5>
@@ -80,7 +80,7 @@
             </div>
             
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card neo-card h-100">
                     <div class="card-body">
                         <i class="bi bi-file-earmark-text text-neo-lime" style="font-size: 2.5rem;"></i>
                         <h5 class="text-neo-navy mt-3">ISO/IEC 17025</h5>
@@ -96,7 +96,7 @@
             </div>
             
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card neo-card h-100">
                     <div class="card-body">
                         <i class="bi bi-graph-up text-neo-lime" style="font-size: 2.5rem;"></i>
                         <h5 class="text-neo-navy mt-3">Measurement Uncertainty</h5>
@@ -111,14 +111,18 @@
                 </div>
             </div>
         </div>
-        
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h3 class="text-neo-navy mb-4">Training Delivery Options</h3>
                 
                 <div class="row g-4 mb-5">
                     <div class="col-md-4">
-                        <div class="card border-0 shadow-sm h-100">
+                        <div class="card neo-card h-100">
                             <div class="card-body text-center p-4">
                                 <i class="bi bi-building text-neo-lime" style="font-size: 2.5rem;"></i>
                                 <h5 class="text-neo-navy mt-3">On-Site Training</h5>
@@ -128,7 +132,7 @@
                     </div>
                     
                     <div class="col-md-4">
-                        <div class="card border-0 shadow-sm h-100">
+                        <div class="card neo-card h-100">
                             <div class="card-body text-center p-4">
                                 <i class="bi bi-house text-neo-lime" style="font-size: 2.5rem;"></i>
                                 <h5 class="text-neo-navy mt-3">Public Courses</h5>
@@ -138,7 +142,7 @@
                     </div>
                     
                     <div class="col-md-4">
-                        <div class="card border-0 shadow-sm h-100">
+                        <div class="card neo-card h-100">
                             <div class="card-body text-center p-4">
                                 <i class="bi bi-pencil-square text-neo-lime" style="font-size: 2.5rem;"></i>
                                 <h5 class="text-neo-navy mt-3">Custom Programs</h5>
@@ -148,7 +152,7 @@
                     </div>
                 </div>
                 
-                <div class="card border-0 shadow-sm bg-neo-light">
+                <div class="card neo-card bg-white border">
                     <div class="card-body p-4">
                         <div class="row align-items-center">
                             <div class="col-md-8">
