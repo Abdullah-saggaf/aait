@@ -10,13 +10,13 @@
         <div class="row align-items-center">
             <div class="col-lg-6 text-white">
                 <h1 class="display-3 fw-bold mb-4" style="color: white !important;">Advanced Materials Testing Laboratory Services</h1>
-                <p class="lead mb-4">Comprehensive testing services for concrete, soil, aggregates, asphalt, and water. ISO/IEC 17025 accredited laboratory ensuring quality and compliance for construction projects across Saudi Arabia.</p>
-                <div class="d-flex gap-3 flex-wrap">
+                <p class="lead mb-4 reveal">Comprehensive testing services for concrete, soil, aggregates, asphalt, and water. ISO/IEC 17025 accredited laboratory ensuring quality and compliance for construction projects across Saudi Arabia.</p>
+                <div class="d-flex gap-3 flex-wrap reveal reveal--delay-1">
                     <a href="{{ route('services.concrete') }}" class="btn btn-primary btn-lg">Explore Services</a>
                     <a href="{{ route('contact.index') }}" class="btn btn-outline-primary btn-lg" style="border-color: var(--neo-lime); color: var(--neo-lime);">Request a Quote</a>
                 </div>
             </div>
-            <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="col-lg-6 mt-5 mt-lg-0 reveal reveal--delay-2">
                 <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
                     <div class="text-center py-5">
                         <i class="bi bi-clipboard-data" style="font-size: 8rem; color: var(--neo-lime);"></i>
@@ -63,9 +63,9 @@
 <!-- WHAT WE OFFER -->
 <section class="py-5">
     <div class="container">
-        <h2 class="section-title text-center mb-5">What We Offer</h2>
+        <h2 class="section-title text-center mb-5 reveal">What We Offer</h2>
         <div class="row g-4">
-            <div class="col-md-4">
+            <div class="col-md-4 reveal reveal--delay-1">
                 <div class="card neo-card h-100">
                     <div class="card-body p-4 text-center">
                         <div class="mb-3">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 reveal reveal--delay-2">
                 <div class="card neo-card h-100">
                     <div class="card-body p-4 text-center">
                         <div class="mb-3">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 reveal reveal--delay-3">
                 <div class="card neo-card h-100">
                     <div class="card-body p-4 text-center">
                         <div class="mb-3">
@@ -108,8 +108,8 @@
 <!-- SOLUTIONS OVERVIEW -->
 <section class="py-5" style="background: white;">
     <div class="container">
-        <h2 class="section-title text-center mb-4">Testing Services Overview</h2>
-        <p class="text-center text-neo-navy mb-5">Explore our comprehensive range of materials testing solutions</p>
+        <h2 class="section-title text-center mb-4 reveal">Testing Services Overview</h2>
+        <p class="text-center text-neo-navy mb-5 reveal reveal--delay-1">Explore our comprehensive range of materials testing solutions</p>
         
         <!-- Category Pills -->
         <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">

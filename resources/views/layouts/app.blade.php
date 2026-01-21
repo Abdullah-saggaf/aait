@@ -13,7 +13,14 @@
     
     @vite(['resources/css/theme.css'])
 </head>
-<body>
+<body class="preloader-active">
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader__content">
+            <img src="{{ asset('images/logo4.svg') }}" alt="AAIT Logo" class="preloader__logo">
+        </div>
+    </div>
+
     @include('partials.navbar')
     
     <main>

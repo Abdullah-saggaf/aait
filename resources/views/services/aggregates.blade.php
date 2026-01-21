@@ -1,126 +1,129 @@
 @extends('layouts.app')
 
-@section('title', 'Aggregates Lab and Field Testing - AAIT')
+@section('title', 'Aggregates Lab and Field Testing')
+@section('description', 'Complete testing services for construction aggregates including coarse and fine aggregates for concrete and asphalt applications.')
 
 @section('content')
-@include('components.page-hero', [
-    'title' => 'Aggregates Lab and Field Testing',
-    'description' => 'Complete testing services for construction aggregates'
-])
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="mb-3">Aggregates Lab and Field Testing</h1>
+        <p class="lead mb-0">Essential for ensuring the quality and suitability of aggregate materials used in construction projects.</p>
+    </div>
+</section>
 
-<div class="container py-5">
-    <div class="row">
-        <div class="col-lg-8 mx-auto">
-            <div class="neo-card mb-4">
-                <h2 class="h4 mb-3 text-neo-navy">About Our Aggregates Testing Services</h2>
-                <p class="text-muted">
-                    Our aggregates testing laboratory ensures that coarse and fine aggregates meet quality standards 
-                    for use in concrete, asphalt, and other construction applications. We provide comprehensive testing 
-                    for physical and mechanical properties.
-                </p>
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8 reveal">
+                <p>At Advanced Analytical Inspection Testing (AAIT), our Aggregates Lab and Field Testing services are essential for ensuring the quality and suitability of aggregate materials used in construction projects. We perform comprehensive tests on aggregates, both in the lab and on-site, to evaluate properties such as size distribution, shape, specific gravity, and moisture content. Our testing services include sieve analysis, flakiness and elongation index tests, and aggregate impact value tests, among others. These assessments provide critical data to determine the performance and durability of aggregates in concrete, asphalt, and other construction materials. With AAIT's expertise and advanced testing capabilities, clients can be confident that the aggregates used in their projects meet the highest standards of quality and performance.</p>
             </div>
-
-            <div class="neo-card mb-4">
-                <h2 class="h4 mb-3 text-neo-navy">Laboratory Testing Services</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Sieve Analysis</strong> - Particle size distribution and gradation
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Specific Gravity & Absorption</strong> - Bulk and apparent specific gravity
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Los Angeles Abrasion</strong> - Resistance to degradation and wear
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Aggregate Crushing Value (ACV)</strong> - Resistance to crushing under load
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Aggregate Impact Value (AIV)</strong> - Resistance to sudden impact
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Soundness Testing</strong> - Sodium and magnesium sulfate soundness
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Flakiness & Elongation Index</strong> - Particle shape characteristics
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Clay Lumps & Friable Particles</strong> - Deleterious materials content
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Organic Impurities</strong> - Colorimetric test for organic content
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Sand Equivalent</strong> - Clay content in fine aggregates
-                    </li>
-                </ul>
-            </div>
-
-            <div class="neo-card mb-4">
-                <h2 class="h4 mb-3 text-neo-navy">Field Testing Services</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Field Sampling</strong> - Representative aggregate sampling from stockpiles
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Field Moisture Content</strong> - Surface moisture determination
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Visual Inspection</strong> - Quality assessment and contamination check
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Quarry Inspection</strong> - Source material quality verification
-                    </li>
-                </ul>
-            </div>
-
-            <div class="neo-card">
-                <h2 class="h4 mb-3 text-neo-navy">Standards & Compliance</h2>
-                <p class="text-muted">Our aggregates testing services comply with international standards including:</p>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>ASTM C136 - Sieve Analysis</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>ASTM C127/C128 - Specific Gravity</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>ASTM C131 - LA Abrasion</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>BS 812 - Aggregate Testing</span>
-                        </div>
+            <div class="col-lg-4 reveal reveal--delay-1">
+                <div class="card neo-card bg-neo-navy text-white">
+                    <div class="card-body">
+                        <h5 class="text-neo-lime mb-3">Need Aggregate Testing?</h5>
+                        <p>Contact us for a quote or to schedule your aggregate quality testing.</p>
+                        <a href="{{ route('contact.index') }}" class="btn btn-primary w-100">Get a Quote</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-@include('components.cta-section')
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5 reveal">Our Testing Services</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-1">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-graph-up text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Sieve Analysis</h5>
+                        <p class="mb-0">Particle size distribution and gradation analysis</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-2">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-rulers text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Flakiness & Elongation Index</h5>
+                        <p class="mb-0">Particle shape and surface characteristics testing</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-3">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-hammer text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Aggregate Impact Value</h5>
+                        <p class="mb-0">Resistance to impact loads and toughness testing</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-4">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-box text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Specific Gravity</h5>
+                        <p class="mb-0">Density characteristics and quality assessment</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-5">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-water text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Moisture Content</h5>
+                        <p class="mb-0">Water content analysis for proper mix design</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-6">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-grid-3x3 text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Size Distribution</h5>
+                        <p class="mb-0">Comprehensive gradation and sizing analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card neo-card bg-neo-light border-0">
+                    <div class="card-body p-4">
+                        <p class="mb-0 text-center">With AAIT's expertise and advanced testing capabilities, clients can be confident that the aggregates used in their projects meet the highest standards of quality and performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="card neo-card bg-neo-light border-0">
+            <div class="card-body p-4">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h5 class="text-neo-navy mb-2">Ready to Test Your Aggregates?</h5>
+                        <p class="mb-0">Contact our team for professional aggregate testing services with fast turnaround times.</p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <a href="{{ route('contact.index') }}" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection

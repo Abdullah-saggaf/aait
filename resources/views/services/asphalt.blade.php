@@ -1,138 +1,129 @@
 @extends('layouts.app')
 
-@section('title', 'Asphalt Lab and Field Testing - AAIT')
+@section('title', 'Asphalt Lab and Field Testing')
+@section('description', 'Complete testing services for asphalt materials and pavements including bitumen testing, mix design, and pavement evaluation.')
 
 @section('content')
-@include('components.page-hero', [
-    'title' => 'Asphalt Lab and Field Testing',
-    'description' => 'Complete testing services for asphalt materials and pavements'
-])
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="mb-3">Asphalt Lab and Field Testing</h1>
+        <p class="lead mb-0">Ensuring the quality, durability, and performance of asphalt materials used in road construction and infrastructure projects.</p>
+    </div>
+</section>
 
-<div class="container py-5">
-    <div class="row">
-        <div class="col-lg-8 mx-auto">
-            <div class="neo-card mb-4">
-                <h2 class="h4 mb-3 text-neo-navy">About Our Asphalt Testing Services</h2>
-                <p class="text-muted">
-                    Our asphalt testing laboratory provides comprehensive testing services for bituminous materials, 
-                    asphalt mixes, and pavement structures. We ensure compliance with specifications for durable 
-                    and high-performance road construction.
-                </p>
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8 reveal">
+                <p>Advanced Analytical Inspection Testing (AAIT) provides specialized Asphalt Lab and Field Testing services to ensure the quality, durability, and performance of asphalt materials used in road construction and other infrastructure projects. We perform a range of tests both in the laboratory and on-site to assess the properties of asphalt, including its composition, density, and resistance to deformation. Our services include tests such as Marshall stability, bitumen content analysis, and asphalt compaction testing. These tests deliver precise data that helps our clients optimize their asphalt mix designs and ensure that the final product meets industry standards for safety and longevity. With AAIT's comprehensive testing and expert analysis, clients can trust that their asphalt materials will perform reliably under various conditions and stresses.</p>
             </div>
-
-            <div class="neo-card mb-4">
-                <h2 class="h4 mb-3 text-neo-navy">Laboratory Testing Services</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Marshall Stability Testing</strong> - Mix design and stability analysis
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Bitumen Content Extraction</strong> - Asphalt binder content determination
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Bitumen Penetration Test</strong> - Consistency and hardness measurement
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Softening Point (Ring & Ball)</strong> - Temperature susceptibility
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Ductility Testing</strong> - Bitumen elongation properties
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Viscosity Testing</strong> - Absolute and kinematic viscosity
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Specific Gravity of Bitumen</strong> - Density measurements
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Flash & Fire Point</strong> - Safety temperature determination
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Air Voids Analysis</strong> - Void content in compacted specimens
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Indirect Tensile Strength</strong> - Cracking resistance evaluation
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Wheel Tracking Test</strong> - Rutting resistance assessment
-                    </li>
-                </ul>
-            </div>
-
-            <div class="neo-card mb-4">
-                <h2 class="h4 mb-3 text-neo-navy">Field Testing Services</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Core Sampling</strong> - Pavement core extraction and analysis
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Field Density Testing</strong> - Nuclear density gauge measurements
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Temperature Monitoring</strong> - Paving temperature control
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Layer Thickness Measurement</strong> - Pavement layer verification
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Pavement Deflection Testing</strong> - Falling weight deflectometer (FWD)
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Surface Friction Testing</strong> - Skid resistance measurement
-                    </li>
-                </ul>
-            </div>
-
-            <div class="neo-card">
-                <h2 class="h4 mb-3 text-neo-navy">Standards & Compliance</h2>
-                <p class="text-muted">Our asphalt testing services comply with international standards including:</p>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>ASTM D1559 - Marshall Method</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>ASTM D5 - Penetration Test</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>ASTM D36 - Softening Point</span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>AASHTO T245 - Asphalt Testing</span>
-                        </div>
+            <div class="col-lg-4 reveal reveal--delay-1">
+                <div class="card neo-card bg-neo-navy text-white">
+                    <div class="card-body">
+                        <h5 class="text-neo-lime mb-3">Need Asphalt Testing?</h5>
+                        <p>Contact us for a quote or to schedule your asphalt testing services.</p>
+                        <a href="{{ route('contact.index') }}" class="btn btn-primary w-100">Get a Quote</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-@include('components.cta-section')
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5 reveal">Our Testing Services</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-1">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-diagram-3 text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Marshall Stability</h5>
+                        <p class="mb-0">Mix design and stability analysis for asphalt mixtures</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-2">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-droplet-half text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Bitumen Content Analysis</h5>
+                        <p class="mb-0">Determination of asphalt binder content in mixtures</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-3">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-hammer text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Asphalt Compaction Testing</h5>
+                        <p class="mb-0">Field density and compaction quality control</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-4">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-layers text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Composition Analysis</h5>
+                        <p class="mb-0">Assessment of asphalt mixture composition and properties</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-5">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-box text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Density Testing</h5>
+                        <p class="mb-0">Measurement of asphalt density and air voids</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-6">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-shield-check text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Deformation Resistance</h5>
+                        <p class="mb-0">Performance under load and stress conditions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card neo-card bg-neo-light border-0">
+                    <div class="card-body p-4">
+                        <p class="mb-0 text-center">With AAIT's comprehensive testing and expert analysis, clients can trust that their asphalt materials will perform reliably under various conditions and stresses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="card neo-card bg-neo-light border-0">
+            <div class="card-body p-4">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h5 class="text-neo-navy mb-2">Ready to Test Your Asphalt?</h5>
+                        <p class="mb-0">Contact our team for professional asphalt testing and pavement evaluation services.</p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <a href="{{ route('contact.index') }}" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection

@@ -7,6 +7,73 @@
     'use strict';
 
     // ============================================================
+    // 0) PRELOADER / INTRO LOADING SCREEN
+    // ============================================================
+    (function initPreloader() {
+        const preloader = document.getElementById('preloader');
+        const body = document.body;
+        
+        if (!preloader) return;
+        
+        // Check if user prefers reduced motion
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        
+        if (prefersReducedMotion) {
+            // Skip animations for reduced motion users
+            hidePreloader();
+            return;
+        }
+        
+        // Timing configuration
+        const MIN_DISPLAY_TIME = 700; // Minimum time to show loader (ms)
+        const MAX_DISPLAY_TIME = 4000; // Maximum timeout fail-safe (ms)
+        
+        let loadStartTime = Date.now();
+        let isContentLoaded = false;
+        let isMinTimeElapsed = false;
+        
+        // Set minimum display timer
+        setTimeout(() => {
+            isMinTimeElapsed = true;
+            checkAndHidePreloader();
+        }, MIN_DISPLAY_TIME);
+        
+        // Set maximum timeout fail-safe
+        setTimeout(() => {
+            if (!isContentLoaded) {
+                console.warn('Preloader max timeout reached, forcing hide');
+                hidePreloader();
+            }
+        }, MAX_DISPLAY_TIME);
+        
+        // Wait for page load (all resources including images)
+        window.addEventListener('load', function() {
+            isContentLoaded = true;
+            checkAndHidePreloader();
+        });
+        
+        function checkAndHidePreloader() {
+            // Only hide if both conditions are met
+            if (isContentLoaded && isMinTimeElapsed) {
+                hidePreloader();
+            }
+        }
+        
+        function hidePreloader() {
+            // Add exit class to trigger animation
+            preloader.classList.add('preloader--exit');
+            
+            // Remove scroll lock from body
+            body.classList.remove('preloader-active');
+            
+            // After animation completes, hide completely
+            setTimeout(() => {
+                preloader.classList.add('preloader--hidden');
+            }, 1000); // Match CSS transition duration (0.7s + 0.25s delay)
+        }
+    })();
+
+    // ============================================================
     // 1) NAVBAR SCROLL EFFECT
     // ============================================================
     const navbar = document.querySelector('.navbar');
@@ -167,7 +234,39 @@
     });
 
     // ============================================================
-    // 8) DROPDOWN CLOSE ON OUTSIDE CLICK (mobile support)
+    // 8) SCROLL REVEAL ANIMATIONS
+    // ============================================================
+    // Check if user prefers reduced motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    if (!prefersReducedMotion) {
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal--visible');
+                    // Unobserve after revealing (animation only happens once)
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            root: null,
+            threshold: 0.1,
+            rootMargin: '0px 0px -8% 0px'
+        });
+
+        // Observe all elements with .reveal class
+        document.querySelectorAll('.reveal').forEach(element => {
+            revealObserver.observe(element);
+        });
+    } else {
+        // If user prefers reduced motion, show all elements immediately
+        document.querySelectorAll('.reveal').forEach(element => {
+            element.classList.add('reveal--visible');
+        });
+    }
+
+    // ============================================================
+    // 9) DROPDOWN CLOSE ON OUTSIDE CLICK (mobile support)
     // ============================================================
     document.addEventListener('click', function(e) {
         if (!e.target.closest('.navbar')) {

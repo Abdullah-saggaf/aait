@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'About Us - AAIT Lab & Instrumentation Services')
-@section('description', 'ISO/IEC 17025:2005 accredited calibration laboratory serving Saudi Arabia since 2005. ARAMCO-approved team delivering precision calibration services.')
+@section('title', 'About Us - AAIT Materials Testing Laboratory')
+@section('description', 'ISO/IEC 17025 accredited materials testing laboratory serving construction projects across Saudi Arabia since 2005.')
 
 @section('content')
 <!-- Page Hero -->
 <section class="page-hero">
     <div class="container">
         <h1 class="mb-3">About Us</h1>
-        <p class="lead mb-0">A journey of precision and excellence serving Saudi Arabia's most critical industries with ISO/IEC 17025:2005 accredited calibration services.</p>
+        <p class="lead mb-0">ISO/IEC 17025 accredited materials testing laboratory providing comprehensive testing services for construction materials in Saudi Arabia.</p>
     </div>
 </section>
 
@@ -16,14 +16,14 @@
 <section class="py-5 bg-white">
     <div class="container">
         <div class="row align-items-center g-5">
-            <div class="col-lg-6">
+            <div class="col-lg-6 reveal">
                 <h2 class="section-title mb-4">Our Story</h2>
                 <h4 class="text-neo-navy mb-4">Founded in 2005</h4>
-                <p class="mb-3">AAIT (Advanced Analytical & Inspection Testing) was originally established in 2005 as a family-owned firm working exclusively for Saudi Aramco under the banner of Metals Services Company.</p>
-                <p class="mb-3">What began as a dedicated calibration service provider has grown steadily, expanding our expertise across mechanical, electro-technical, and thermal measuring instruments. Our commitment to precision and quality has made us a trusted partner for industries throughout Saudi Arabia.</p>
-                <p class="mb-4">On April 24th, 2014, under new ownership, AAIT was formally reorganized as a wholly-owned Saudi Arabian Proprietorship Organization, maintaining our legacy of excellence while embracing modern standards and expanding our service capabilities.</p>
+                <p class="mb-3">AAIT (Advanced Analytical & Inspection Testing) was established in 2005 as a specialized materials testing laboratory in Saudi Arabia.</p>
+                <p class="mb-3">We provide comprehensive testing services for construction materials including concrete, soil, aggregates, asphalt, and water. Our ISO/IEC 17025 accredited laboratory ensures accurate and reliable test results for construction projects across the Kingdom.</p>
+                <p class="mb-4">With state-of-the-art testing equipment and a team of qualified technicians, we serve contractors, consultants, and government agencies, delivering quality assurance for critical infrastructure projects throughout Saudi Arabia.</p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 reveal reveal--delay-1">
                 <div class="card neo-card border-0">
                     <div class="card-body p-5 bg-neo-navy text-white">
                         <div class="text-center">
@@ -67,11 +67,11 @@
 <!-- Our Journey Timeline -->
 <section class="py-5">
     <div class="container">
-        <h3 class="text-center text-neo-navy mb-5">Our Journey</h3>
-        <p class="text-center mb-5">From Vision to Reality</p>
+        <h3 class="text-center text-neo-navy mb-5 reveal">Our Journey</h3>
+        <p class="text-center mb-5 reveal reveal--delay-1">From Vision to Reality</p>
         
         <div class="row g-4">
-            <div class="col-md-3">
+            <div class="col-md-3 reveal reveal--delay-1">
                 <div class="card neo-card h-100 text-center">
                     <div class="card-body p-4">
                         <div class="display-4 fw-bold text-neo-lime mb-3">1</div>
@@ -120,7 +120,7 @@
             <div class="col-lg-6">
                 <h4 class="text-neo-navy mb-4">Our Mission Statement</h4>
                 <blockquote class="border-start border-5 border-neo-lime ps-4 py-3 bg-neo-light">
-                    <p class="mb-0 fst-italic">"To deliver exceptional calibration and inspection services that drive operational excellence, safety, and reliability across Saudi Arabia's critical industries, while building lasting partnerships founded on trust, precision, and unwavering quality in accordance with ISO/IEC 17025:2005 standards."</p>
+                    <p class="mb-0 fst-italic">"To provide accurate and reliable materials testing services that ensure the quality, safety, and durability of construction projects across Saudi Arabia, delivering excellence through ISO/IEC 17025 accredited testing and professional service."</p>
                 </blockquote>
             </div>
             <div class="col-lg-6">
@@ -178,12 +178,12 @@
                 <div class="card neo-card h-100">
                     <div class="card-body p-4 text-center">
                         <i class="bi bi-gear-wide-connected text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-4 mb-3">Engineering Excellence</h5>
-                        <p class="mb-3">ISO/IEC 17025:2005 quality management ensuring international compliance standards</p>
+                        <h5 class="text-neo-navy mt-4 mb-3">Testing Excellence</h5>
+                        <p class="mb-3">ISO/IEC 17025 accredited laboratory ensuring international compliance and quality standards</p>
                         <ul class="list-unstyled small">
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>ISO/IEC 17025:2005 Aligned</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Technical Design Support</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Custom Calibration Solutions</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>ISO/IEC 17025 Accredited</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>ASTM & BS Standards</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Comprehensive Testing</li>
                         </ul>
                     </div>
                 </div>
@@ -192,12 +192,12 @@
                 <div class="card neo-card h-100">
                     <div class="card-body p-4 text-center">
                         <i class="bi bi-globe text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-4 mb-3">Global Traceability</h5>
-                        <p class="mb-3">Full traceability to international measurement standards</p>
+                        <h5 class="text-neo-navy mt-4 mb-3">International Standards</h5>
+                        <p class="mb-3">Full compliance with recognized international testing standards</p>
                         <ul class="list-unstyled small">
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>NIST Traceable</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>NPL (UK) Standards</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>PTB & National Labs</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>ASTM Standards</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>BS & AASHTO</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>ISO Specifications</li>
                         </ul>
                     </div>
                 </div>
@@ -206,12 +206,12 @@
                 <div class="card neo-card h-100">
                     <div class="card-body p-4 text-center">
                         <i class="bi bi-tools text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-4 mb-3">Technical Support</h5>
-                        <p class="mb-3">Comprehensive support from onsite calibration to maintenance</p>
+                        <h5 class="text-neo-navy mt-4 mb-3">Field Services</h5>
+                        <p class="mb-3">Comprehensive laboratory and field testing services at project sites</p>
                         <ul class="list-unstyled small">
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>ARAMCO Approved Team</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>On-site Calibration</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Equipment Commissioning</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Qualified Technicians</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>On-site Testing</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Sample Collection</li>
                         </ul>
                     </div>
                 </div>
@@ -221,11 +221,11 @@
                     <div class="card-body p-4 text-center">
                         <i class="bi bi-clipboard-check text-neo-lime" style="font-size: 3rem;"></i>
                         <h5 class="text-neo-navy mt-4 mb-3">Quality Assurance</h5>
-                        <p class="mb-3">Rigorous testing and quality control for all calibrations</p>
+                        <p class="mb-3">Rigorous testing protocols and quality control for accurate results</p>
                         <ul class="list-unstyled small">
                             <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Modern Equipment</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Quality Certificates</li>
-                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Flexible Turnaround</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Detailed Reports</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-neo-lime me-2"></i>Fast Turnaround</li>
                         </ul>
                     </div>
                 </div>
@@ -238,7 +238,7 @@
 <section class="py-5 bg-white">
     <div class="container">
         <h2 class="section-title text-center mb-4">Industries We Serve</h2>
-        <p class="text-center mb-5">Supporting Saudi Arabia's critical industrial sectors with specialized calibration solutions and technical expertise.</p>
+        <p class="text-center mb-5">Supporting construction and infrastructure projects across Saudi Arabia with comprehensive materials testing services.</p>
         
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
@@ -247,9 +247,9 @@
                         <div class="d-flex align-items-start">
                             <div class="display-6 text-neo-lime me-3">1</div>
                             <div>
-                                <h5 class="text-neo-navy mb-2">Oil & Gas</h5>
-                                <p class="mb-2">Upstream, midstream, and downstream operations support</p>
-                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                                <h5 class="text-neo-navy mb-2">Construction Projects</h5>
+                                <p class="mb-2">Quality testing for residential and commercial buildings</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Comprehensive Testing</span>
                             </div>
                         </div>
                     </div>
@@ -261,9 +261,9 @@
                         <div class="d-flex align-items-start">
                             <div class="display-6 text-neo-lime me-3">2</div>
                             <div>
-                                <h5 class="text-neo-navy mb-2">Petrochemical</h5>
-                                <p class="mb-2">Specialized equipment for chemical processing facilities</p>
-                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                                <h5 class="text-neo-navy mb-2">Infrastructure Development</h5>
+                                <p class="mb-2">Testing for roads, bridges, and transportation projects</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Field & Lab Testing</span>
                             </div>
                         </div>
                     </div>
@@ -275,9 +275,9 @@
                         <div class="d-flex align-items-start">
                             <div class="display-6 text-neo-lime me-3">3</div>
                             <div>
-                                <h5 class="text-neo-navy mb-2">Manufacturing</h5>
-                                <p class="mb-2">Precision measurement for production facilities</p>
-                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                                <h5 class="text-neo-navy mb-2">Government Projects</h5>
+                                <p class="mb-2">Quality assurance for public sector developments</p>
+                                <span class="badge bg-neo-lime text-neo-navy">ISO Accredited</span>
                             </div>
                         </div>
                     </div>
@@ -289,9 +289,9 @@
                         <div class="d-flex align-items-start">
                             <div class="display-6 text-neo-lime me-3">4</div>
                             <div>
-                                <h5 class="text-neo-navy mb-2">Power Generation</h5>
-                                <p class="mb-2">Critical infrastructure for utilities and energy sectors</p>
-                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                                <h5 class="text-neo-navy mb-2">Industrial Facilities</h5>
+                                <p class="mb-2">Materials testing for factories and warehouses</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Reliable Results</span>
                             </div>
                         </div>
                     </div>
@@ -303,9 +303,9 @@
                         <div class="d-flex align-items-start">
                             <div class="display-6 text-neo-lime me-3">5</div>
                             <div>
-                                <h5 class="text-neo-navy mb-2">Mining Operations</h5>
-                                <p class="mb-2">Robust calibration solutions for extraction and processing</p>
-                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                                <h5 class="text-neo-navy mb-2">Residential Compounds</h5>
+                                <p class="mb-2">Testing services for housing developments</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Quality Control</span>
                             </div>
                         </div>
                     </div>
@@ -317,9 +317,9 @@
                         <div class="d-flex align-items-start">
                             <div class="display-6 text-neo-lime me-3">6</div>
                             <div>
-                                <h5 class="text-neo-navy mb-2">Water Treatment</h5>
-                                <p class="mb-2">Quality assurance for water and wastewater facilities</p>
-                                <span class="badge bg-neo-lime text-neo-navy">Specialized Solutions</span>
+                                <h5 class="text-neo-navy mb-2">MEP Projects</h5>
+                                <p class="mb-2">Material testing for mechanical and utility installations</p>
+                                <span class="badge bg-neo-lime text-neo-navy">Expert Analysis</span>
                             </div>
                         </div>
                     </div>
@@ -332,7 +332,7 @@
             <div class="col-6 col-md-3">
                 <div class="p-4 bg-neo-light rounded">
                     <h3 class="text-neo-navy fw-bold mb-2">6</h3>
-                    <p class="mb-0">Industrial Sectors</p>
+                    <p class="mb-0">Industry Sectors</p>
                 </div>
             </div>
             <div class="col-6 col-md-3">

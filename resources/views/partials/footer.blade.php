@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-4">
-                <img src="{{ asset('images/logo3.svg') }}" alt="AAIT" height="40" class="mb-3">
-                <p>ISO/IEC 17025 Accredited Materials Testing Laboratory in Saudi Arabia</p>
+                <img src="{{ asset('images/logo3.svg') }}" alt="AAIT" class="logo-img mb-3">
+                <p>AAIT - Advanced Analytical & Inspection Testing. ISO/IEC 17025 Accredited Materials Testing Laboratory serving construction projects across Saudi Arabia since 2005.</p>
             </div>
             <div class="col-md-2 mb-4">
                 <h5 class="text-neo-lime">About</h5>

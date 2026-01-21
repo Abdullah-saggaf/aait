@@ -1,152 +1,123 @@
 @extends('layouts.app')
 
-@section('title', 'Water Lab Testing - AAIT')
+@section('title', 'Water Lab Testing')
+@section('description', 'Comprehensive water quality testing and analysis services for potable water, concrete mixing water, and wastewater.')
 
 @section('content')
-@include('components.page-hero', [
-    'title' => 'Water Lab Testing',
-    'description' => 'Comprehensive water quality testing and analysis services'
-])
+<!-- Page Hero -->
+<section class="page-hero">
+    <div class="container">
+        <h1 class="mb-3">Water Lab Testing</h1>
+        <p class="lead mb-0">Assessing the quality and suitability of water used in construction and industrial processes.</p>
+    </div>
+</section>
 
-<div class="container py-5">
-    <div class="row">
-        <div class="col-lg-8 mx-auto">
-            <div class="neo-card mb-4">
-                <h2 class="h4 mb-3 text-neo-navy">About Our Water Testing Services</h2>
-                <p class="text-muted">
-                    Our water testing laboratory provides comprehensive analysis services for potable water, mixing water 
-                    for concrete, wastewater, and environmental water samples. We ensure water quality meets health, 
-                    safety, and construction standards.
-                </p>
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8 reveal">
+                <p>Advanced Analytical Inspection Testing (AAIT) offers Water Lab Testing services to assess the quality and suitability of water used in construction and industrial processes. Our comprehensive testing ensures that water meets the required standards for various applications, including mixing concrete, curing, and other site-specific needs. We conduct a wide range of tests, including pH level, hardness, alkalinity, and contamination analysis, to provide detailed insights into the water's properties. Our precise testing methods and advanced laboratory equipment help clients ensure that the water used in their projects contributes to the desired outcomes and adheres to industry standards. With AAIT's Water Lab Testing services, clients can be assured of the quality and compliance of water in their construction and operational processes.</p>
             </div>
-
-            <div class="neo-card mb-4">
-                <h2 class="h4 mb-3 text-neo-navy">Physical Testing</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Color & Turbidity</strong> - Visual water quality assessment
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Total Dissolved Solids (TDS)</strong> - Dissolved mineral content
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Total Suspended Solids (TSS)</strong> - Suspended particle measurement
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Electrical Conductivity</strong> - Dissolved ion concentration
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Temperature & Odor</strong> - Basic quality parameters
-                    </li>
-                </ul>
-            </div>
-
-            <div class="neo-card mb-4">
-                <h2 class="h4 mb-3 text-neo-navy">Chemical Testing</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>pH Value</strong> - Acidity and alkalinity measurement
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Chloride Content</strong> - Corrosion potential assessment
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Sulfate Content</strong> - Concrete durability evaluation
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Alkalinity</strong> - Carbonate and bicarbonate content
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Hardness (Total & Calcium)</strong> - Mineral hardness determination
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Heavy Metals</strong> - Lead, iron, copper, zinc analysis
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Dissolved Oxygen (DO)</strong> - Oxygen content measurement
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Chemical Oxygen Demand (COD)</strong> - Organic pollution indicator
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Biochemical Oxygen Demand (BOD)</strong> - Biodegradable organic matter
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Nitrates & Phosphates</strong> - Nutrient content analysis
-                    </li>
-                </ul>
-            </div>
-
-            <div class="neo-card mb-4">
-                <h2 class="h4 mb-3 text-neo-navy">Specialized Testing</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Concrete Mixing Water</strong> - ASTM C1602 suitability testing
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Potable Water Analysis</strong> - Drinking water quality standards
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Wastewater Analysis</strong> - Effluent quality monitoring
-                    </li>
-                    <li class="list-group-item px-0">
-                        <i class="bi bi-check-circle text-neo-lime me-2"></i>
-                        <strong>Seawater Analysis</strong> - Marine environment testing
-                    </li>
-                </ul>
-            </div>
-
-            <div class="neo-card">
-                <h2 class="h4 mb-3 text-neo-navy">Standards & Compliance</h2>
-                <p class="text-muted">Our water testing services comply with international standards including:</p>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>ASTM C1602 - Mixing Water</span>
-                        </div>
+            <div class="col-lg-4 reveal reveal--delay-1">
+                <div class="card neo-card bg-neo-navy text-white">
+                    <div class="card-body">
+                        <h5 class="text-neo-lime mb-3">Need Water Testing?</h5>
+                        <p>Contact us for a quote or to schedule your water quality testing.</p>
+                        <a href="{{ route('contact.index') }}" class="btn btn-primary w-100">Get a Quote</a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>WHO Guidelines - Drinking Water</span>
-                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5 reveal">Our Testing Services</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 reveal reveal--delay-1">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-droplet-half text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">pH Level Testing</h5>
+                        <p class="mb-0">Acidity and alkalinity measurement</p>
                     </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>APHA Standard Methods</span>
-                        </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3 reveal reveal--delay-2">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-bar-chart text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Hardness Testing</h5>
+                        <p class="mb-0">Total hardness and mineral content</p>
                     </div>
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-file-earmark-check text-neo-lime fs-4 me-2"></i>
-                            <span>EPA Water Quality Standards</span>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3 reveal reveal--delay-3">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-water text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Alkalinity Analysis</h5>
+                        <p class="mb-0">Water buffering capacity assessment</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3 reveal reveal--delay-4">
+                <div class="card neo-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-shield-x text-neo-lime" style="font-size: 3rem;"></i>
+                        <h5 class="text-neo-navy mt-3 mb-3">Contamination Analysis</h5>
+                        <p class="mb-0">Detection of impurities and contaminants</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card neo-card bg-white border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h5 class="text-neo-navy mb-4 text-center">Applications</h5>
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <i class="bi bi-building text-neo-lime" style="font-size: 2rem;"></i>
+                                <p class="mt-2 mb-0"><strong>Concrete Mixing</strong></p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="bi bi-droplet text-neo-lime" style="font-size: 2rem;"></i>
+                                <p class="mt-2 mb-0"><strong>Curing Water</strong></p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="bi bi-gear-wide-connected text-neo-lime" style="font-size: 2rem;"></i>
+                                <p class="mt-2 mb-0"><strong>Industrial Processes</strong></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-@include('components.cta-section')
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="card neo-card bg-neo-light border-0">
+            <div class="card-body p-4">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h5 class="text-neo-navy mb-2">Ready for Water Quality Testing?</h5>
+                        <p class="mb-0">Contact our team for professional water testing and analysis services.</p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <a href="{{ route('contact.index') }}" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
