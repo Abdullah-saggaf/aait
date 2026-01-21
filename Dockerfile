@@ -13,24 +13,20 @@ WORKDIR /app
 # Copy package files first for better caching
 COPY package*.json ./
 
-# Install dependencies (if package.json exists and has dependencies)
-RUN if [ -f package.json ] && [ -s package.json ]; then \
-        npm ci --ignore-scripts 2>/dev/null || npm install --ignore-scripts 2>/dev/null || true; \
-    fi
+# Install dependencies
+RUN npm ci || npm install
 
-# Copy source files needed for build
+# Copy ALL source files needed for Vite + Tailwind v4 build
+# Tailwind v4 scans these files to determine which classes to include
 COPY resources ./resources
-COPY vite.config.js* ./
-COPY postcss.config.js* ./
-COPY tailwind.config.js* ./
+COPY vite.config.js ./
 COPY public ./public
 
-# Build assets (skip gracefully if no build script)
-RUN if [ -f package.json ] && grep -q '"build"' package.json 2>/dev/null; then \
-        npm run build || echo "Frontend build failed or not configured, continuing..."; \
-    else \
-        echo "No build script found, skipping frontend build..."; \
-    fi
+# Build assets
+RUN npm run build
+
+# Verify build output exists
+RUN ls -la /app/public/build/ && ls -la /app/public/build/assets/
 
 # -----------------------------------------------------------------------------
 # Stage 2: Install PHP dependencies with Composer
@@ -130,14 +126,18 @@ COPY --chown=www-data:www-data . .
 # Copy Composer dependencies from builder
 COPY --from=composer /app/vendor ./vendor
 
-# Copy built frontend assets (if they exist)
-COPY --from=frontend /app/public/build ./public/build
+# Copy built frontend assets from frontend stage
+# This overwrites any existing public/build with freshly built assets
+COPY --from=frontend /app/public/build/ ./public/build/
 
 # Copy Docker configuration files
 COPY docker/nginx.conf /etc/nginx/nginx.conf
 COPY docker/site.conf /etc/nginx/http.d/default.conf
 COPY docker/supervisord.conf /etc/supervisord.conf
 COPY docker/start.sh /start.sh
+
+# Verify assets were copied
+RUN ls -la /var/www/html/public/build/ || echo "Warning: No build assets found"
 
 # Make start script executable
 RUN chmod +x /start.sh
