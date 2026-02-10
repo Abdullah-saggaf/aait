@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-4">
-                <img src="{{ asset('images/logo3.svg') }}" alt="AAIT" height="40" class="mb-3">
-                <p>ISO/IEC 17025:2005 Calibration & Inspection Services across Saudi Arabia</p>
+                <img src="{{ asset('images/logo3.svg') }}" alt="AAIT" class="logo-img mb-3">
+                <p>AAIT - Advanced Analytical & Inspection Testing. ISO/IEC 17025 Accredited Materials Testing Laboratory serving construction projects across Saudi Arabia since 2005.</p>
             </div>
             <div class="col-md-2 mb-4">
                 <h5 class="text-neo-lime">About</h5>
@@ -14,11 +14,11 @@
             <div class="col-md-3 mb-4">
                 <h5 class="text-neo-lime">Services</h5>
                 <ul class="list-unstyled">
-                    <li><a href="{{ route('services.calibration') }}">Calibration</a></li>
-                    <li><a href="{{ route('services.inspection') }}">Inspection</a></li>
-                    <li><a href="{{ route('services.certification') }}">Certification</a></li>
-                    <li><a href="{{ route('services.maintenance') }}">Maintenance</a></li>
-                    <li><a href="{{ route('services.training') }}">Training</a></li>
+                    <li><a href="{{ route('services.concrete') }}">Concrete Testing</a></li>
+                    <li><a href="{{ route('services.soil') }}">Soil Testing</a></li>
+                    <li><a href="{{ route('services.aggregates') }}">Aggregates Testing</a></li>
+                    <li><a href="{{ route('services.asphalt') }}">Asphalt Testing</a></li>
+                    <li><a href="{{ route('services.water') }}">Water Testing</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-4">

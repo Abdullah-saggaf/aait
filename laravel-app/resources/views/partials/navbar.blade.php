@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
         <a class="navbar-brand" href="{{ route('home') }}">
-            <img src="{{ asset('images/logo5.svg') }}" alt="AAIT" height="40" class="d-inline-block align-text-top">
+            <img src="{{ asset('images/logo5.svg') }}" alt="AAIT" style="height: 40px; width: auto; display: block;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,11 +19,11 @@
                         Scope & Services
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('services.calibration') }}">Calibration Services</a></li>
-                        <li><a class="dropdown-item" href="{{ route('services.inspection') }}">Inspection Services</a></li>
-                        <li><a class="dropdown-item" href="{{ route('services.certification') }}">Certification Services</a></li>
-                        <li><a class="dropdown-item" href="{{ route('services.maintenance') }}">Maintenance & Repair Services</a></li>
-                        <li><a class="dropdown-item" href="{{ route('services.training') }}">Training Services</a></li>
+                        <li><a class="dropdown-item" href="{{ route('services.concrete') }}">Concrete Lab and Field Testing</a></li>
+                        <li><a class="dropdown-item" href="{{ route('services.soil') }}">Soil Lab and Field Testing</a></li>
+                        <li><a class="dropdown-item" href="{{ route('services.aggregates') }}">Aggregates Lab and Field Testing</a></li>
+                        <li><a class="dropdown-item" href="{{ route('services.asphalt') }}">Asphalt Lab and Field Testing</a></li>
+                        <li><a class="dropdown-item" href="{{ route('services.water') }}">Water Lab Testing</a></li>
                     </ul>
                 </li>
                 

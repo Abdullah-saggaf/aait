@@ -13,25 +13,25 @@ Route::get('/about', function () {
 })->name('about.index');
 
 // Services
-Route::get('/services/calibration', function () {
-    return view('services.calibration');
-})->name('services.calibration');
+Route::get('/services/concrete', function () {
+    return view('services.concrete');
+})->name('services.concrete');
 
-Route::get('/services/inspection', function () {
-    return view('services.inspection');
-})->name('services.inspection');
+Route::get('/services/soil', function () {
+    return view('services.soil');
+})->name('services.soil');
 
-Route::get('/services/certification', function () {
-    return view('services.certification');
-})->name('services.certification');
+Route::get('/services/aggregates', function () {
+    return view('services.aggregates');
+})->name('services.aggregates');
 
-Route::get('/services/maintenance', function () {
-    return view('services.maintenance');
-})->name('services.maintenance');
+Route::get('/services/asphalt', function () {
+    return view('services.asphalt');
+})->name('services.asphalt');
 
-Route::get('/services/training', function () {
-    return view('services.training');
-})->name('services.training');
+Route::get('/services/water', function () {
+    return view('services.water');
+})->name('services.water');
 
 // Partners
 Route::get('/partners', function () {
