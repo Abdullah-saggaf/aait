@@ -35,46 +35,34 @@
     <div class="container">
         <h2 class="section-title text-center mb-5 reveal">Our Testing Services</h2>
         
+        @php
+            $services = [
+                ['image' => 'Standard Penetration Tests (SPT).jpg', 'title' => 'Standard Penetration Tests (SPT)', 'desc' => 'In-situ testing to assess soil strength and penetration resistance'],
+                ['image' => 'Proctor Compaction Tests.jpg', 'title' => 'Proctor Compaction Tests', 'desc' => 'Determination of optimum moisture content and maximum dry density'],
+                ['image' => 'Soil Classification.jpg', 'title' => 'Soil Classification', 'desc' => 'Comprehensive soil characterization and classification analysis'],
+                ['image' => 'Soil Properties Analysis.jpg', 'title' => 'Soil Properties Analysis', 'desc' => 'Testing for composition, density, moisture content, and load-bearing capacity'],
+            ];
+        @endphp
+        
         <div class="row g-4 justify-content-center">
-            <div class="col-md-6 col-lg-3 reveal reveal--delay-1">
+            @foreach($services as $index => $service)
+            <div class="col-md-6 col-lg-3 reveal reveal--delay-{{ $index + 1 }}">
                 <div class="card neo-card h-100">
+                    <div class="overflow-hidden" style="height: 180px;">
+                        <img src="{{ asset('images/Soil Testing/' . $service['image']) }}" 
+                             alt="{{ $service['title'] }}" 
+                             class="w-100 h-100" 
+                             style="object-fit: cover;" 
+                             loading="lazy" 
+                             width="300" height="180">
+                    </div>
                     <div class="card-body text-center">
-                        <i class="bi bi-clipboard-check text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Standard Penetration Tests (SPT)</h5>
-                        <p class="mb-0">In-situ testing to assess soil strength and penetration resistance</p>
+                        <h5 class="text-neo-navy mt-2 mb-3">{{ $service['title'] }}</h5>
+                        <p class="mb-0">{{ $service['desc'] }}</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6 col-lg-3 reveal reveal--delay-2">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-hammer text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Proctor Compaction Tests</h5>
-                        <p class="mb-0">Determination of optimum moisture content and maximum dry density</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-3 reveal reveal--delay-3">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-grid-3x3 text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Soil Classification</h5>
-                        <p class="mb-0">Comprehensive soil characterization and classification analysis</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-3 reveal reveal--delay-4">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-water text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Soil Properties Analysis</h5>
-                        <p class="mb-0">Testing for composition, density, moisture content, and load-bearing capacity</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         
         <div class="row mt-4">

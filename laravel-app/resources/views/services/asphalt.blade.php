@@ -35,66 +35,36 @@
     <div class="container">
         <h2 class="section-title text-center mb-5 reveal">Our Testing Services</h2>
         
+        @php
+            $services = [
+                ['image' => 'Marshall Stability.webp', 'title' => 'Marshall Stability', 'desc' => 'Mix design and stability analysis for asphalt mixtures'],
+                ['image' => 'Bitumen Content Analysis.jpeg', 'title' => 'Bitumen Content Analysis', 'desc' => 'Determination of asphalt binder content in mixtures'],
+                ['image' => 'Asphalt Compaction Testing.jpg', 'title' => 'Asphalt Compaction Testing', 'desc' => 'Field density and compaction quality control'],
+                ['image' => 'Composition Analysis.jpg', 'title' => 'Composition Analysis', 'desc' => 'Assessment of asphalt mixture composition and properties'],
+                ['image' => 'Density Testing.webp', 'title' => 'Density Testing', 'desc' => 'Measurement of asphalt density and air voids'],
+                ['image' => 'Deformation Resistance.png', 'title' => 'Deformation Resistance', 'desc' => 'Performance under load and stress conditions'],
+            ];
+        @endphp
+        
         <div class="row g-4">
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-1">
+            @foreach($services as $index => $service)
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-{{ ($index % 6) + 1 }}">
                 <div class="card neo-card h-100">
+                    <div class="overflow-hidden" style="height: 180px;">
+                        <img src="{{ asset('images/Asphalt Testing/' . $service['image']) }}" 
+                             alt="{{ $service['title'] }}" 
+                             class="w-100 h-100" 
+                             style="object-fit: cover;" 
+                             loading="lazy" 
+                             width="400" height="180">
+                    </div>
                     <div class="card-body text-center">
-                        <i class="bi bi-diagram-3 text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Marshall Stability</h5>
-                        <p class="mb-0">Mix design and stability analysis for asphalt mixtures</p>
+                        <h5 class="text-neo-navy mt-2 mb-3">{{ $service['title'] }}</h5>
+                        <p class="mb-0">{{ $service['desc'] }}</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-2">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-droplet-half text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Bitumen Content Analysis</h5>
-                        <p class="mb-0">Determination of asphalt binder content in mixtures</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-3">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-hammer text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Asphalt Compaction Testing</h5>
-                        <p class="mb-0">Field density and compaction quality control</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-4">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-layers text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Composition Analysis</h5>
-                        <p class="mb-0">Assessment of asphalt mixture composition and properties</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-5">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-box text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Density Testing</h5>
-                        <p class="mb-0">Measurement of asphalt density and air voids</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-6">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-shield-check text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Deformation Resistance</h5>
-                        <p class="mb-0">Performance under load and stress conditions</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         
         <div class="row mt-4">

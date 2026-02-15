@@ -35,36 +35,33 @@
     <div class="container">
         <h2 class="section-title text-center mb-5 reveal">Our Testing Services</h2>
         
+        @php
+            $services = [
+                ['image' => 'Compressive Strength Tests.jpg', 'title' => 'Compressive Strength Tests', 'desc' => 'Standard testing to assess concrete strength and quality'],
+                ['image' => 'Ceconcrete Mix Design Evaluationsg.png', 'title' => 'Mix Design Evaluations', 'desc' => 'Optimization of concrete mix designs for project requirements'],
+                ['image' => 'Slump Tests.webp', 'title' => 'Slump Tests', 'desc' => 'Workability and consistency testing for fresh concrete'],
+            ];
+        @endphp
+        
         <div class="row g-4 justify-content-center">
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-1">
+            @foreach($services as $index => $service)
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-{{ $index + 1 }}">
                 <div class="card neo-card h-100">
+                    <div class="overflow-hidden" style="height: 200px;">
+                        <img src="{{ asset('images/Concrete Testing/' . $service['image']) }}" 
+                             alt="{{ $service['title'] }}" 
+                             class="w-100 h-100" 
+                             style="object-fit: cover;" 
+                             loading="lazy" 
+                             width="400" height="200">
+                    </div>
                     <div class="card-body text-center">
-                        <i class="bi bi-clipboard-data text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Compressive Strength Tests</h5>
-                        <p class="mb-0">Standard testing to assess concrete strength and quality</p>
+                        <h5 class="text-neo-navy mt-2 mb-3">{{ $service['title'] }}</h5>
+                        <p class="mb-0">{{ $service['desc'] }}</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-2">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-calculator text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Mix Design Evaluations</h5>
-                        <p class="mb-0">Optimization of concrete mix designs for project requirements</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-3">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-droplet text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Slump Tests</h5>
-                        <p class="mb-0">Workability and consistency testing for fresh concrete</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         
         <div class="row mt-4">

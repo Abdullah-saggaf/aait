@@ -35,46 +35,34 @@
     <div class="container">
         <h2 class="section-title text-center mb-5 reveal">Our Testing Services</h2>
         
+        @php
+            $services = [
+                ['image' => 'pH Level Testing.jpg', 'title' => 'pH Level Testing', 'desc' => 'Acidity and alkalinity measurement'],
+                ['image' => 'Hardness Testing.webp', 'title' => 'Hardness Testing', 'desc' => 'Total hardness and mineral content'],
+                ['image' => 'Alkalinity Analysis.webp', 'title' => 'Alkalinity Analysis', 'desc' => 'Water buffering capacity assessment'],
+                ['image' => 'Contamination Analysis.jpg', 'title' => 'Contamination Analysis', 'desc' => 'Detection of impurities and contaminants'],
+            ];
+        @endphp
+        
         <div class="row g-4">
-            <div class="col-md-6 col-lg-3 reveal reveal--delay-1">
+            @foreach($services as $index => $service)
+            <div class="col-md-6 col-lg-3 reveal reveal--delay-{{ $index + 1 }}">
                 <div class="card neo-card h-100">
+                    <div class="overflow-hidden" style="height: 160px;">
+                        <img src="{{ asset('images/Water Testing/' . $service['image']) }}" 
+                             alt="{{ $service['title'] }}" 
+                             class="w-100 h-100" 
+                             style="object-fit: cover;" 
+                             loading="lazy" 
+                             width="300" height="160">
+                    </div>
                     <div class="card-body text-center">
-                        <i class="bi bi-droplet-half text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">pH Level Testing</h5>
-                        <p class="mb-0">Acidity and alkalinity measurement</p>
+                        <h5 class="text-neo-navy mt-2 mb-3">{{ $service['title'] }}</h5>
+                        <p class="mb-0">{{ $service['desc'] }}</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6 col-lg-3 reveal reveal--delay-2">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-bar-chart text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Hardness Testing</h5>
-                        <p class="mb-0">Total hardness and mineral content</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-3 reveal reveal--delay-3">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-water text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Alkalinity Analysis</h5>
-                        <p class="mb-0">Water buffering capacity assessment</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-3 reveal reveal--delay-4">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-shield-x text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Contamination Analysis</h5>
-                        <p class="mb-0">Detection of impurities and contaminants</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         
         <div class="row mt-5">

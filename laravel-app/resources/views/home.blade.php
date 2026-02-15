@@ -17,11 +17,12 @@
                 </div>
             </div>
             <div class="col-lg-6 mt-5 mt-lg-0 reveal reveal--delay-2">
-                <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
-                    <div class="text-center py-5">
-                        <i class="bi bi-clipboard-data" style="font-size: 8rem; color: var(--neo-lime);"></i>
-                        <p class="text-white mt-3 mb-0 fw-semibold">State-of-the-Art Testing Facilities</p>
-                    </div>
+                <div class="p-5 rounded-4 d-flex align-items-center justify-content-center" style="background: rgba(255,255,255,0.05);">
+                    <img src="{{ asset('images/logo2.svg') }}" 
+                         alt="AAIT Logo" 
+                         class="img-fluid" 
+                         style="max-height: 350px;"
+                         width="400" height="350">
                 </div>
             </div>
         </div>
@@ -67,10 +68,15 @@
         <div class="row g-4">
             <div class="col-md-4 reveal reveal--delay-1">
                 <div class="card neo-card h-100">
+                    <div class="overflow-hidden" style="height: 200px;">
+                        <img src="{{ asset('images/photos/Home/Compressive Strength Testing.jpg') }}" 
+                             alt="Construction Materials Testing" 
+                             class="w-100 h-100" 
+                             style="object-fit: cover;" 
+                             loading="lazy" 
+                             width="400" height="200">
+                    </div>
                     <div class="card-body p-4 text-center">
-                        <div class="mb-3">
-                            <i class="bi bi-building text-neo-lime" style="font-size: 3.5rem;"></i>
-                        </div>
                         <h4 class="text-neo-navy mb-3">Construction Materials Testing</h4>
                         <p class="mb-3">Comprehensive testing for concrete, soil, aggregates, and asphalt to ensure structural integrity and compliance with specifications.</p>
                         <a href="{{ route('services.concrete') }}" class="btn btn-outline-primary">Learn More</a>
@@ -79,10 +85,15 @@
             </div>
             <div class="col-md-4 reveal reveal--delay-2">
                 <div class="card neo-card h-100">
+                    <div class="overflow-hidden" style="height: 200px;">
+                        <img src="{{ asset('images/photos/Home/Lab & Field Testing.avif') }}" 
+                             alt="Lab and Field Testing" 
+                             class="w-100 h-100" 
+                             style="object-fit: cover;" 
+                             loading="lazy" 
+                             width="400" height="200">
+                    </div>
                     <div class="card-body p-4 text-center">
-                        <div class="mb-3">
-                            <i class="bi bi-clipboard-check text-neo-lime" style="font-size: 3.5rem;"></i>
-                        </div>
                         <h4 class="text-neo-navy mb-3">Lab & Field Testing</h4>
                         <p class="mb-3">Both laboratory and onsite field testing services with state-of-the-art equipment and experienced technicians.</p>
                         <a href="{{ route('services.soil') }}" class="btn btn-outline-primary">Learn More</a>
@@ -91,10 +102,15 @@
             </div>
             <div class="col-md-4 reveal reveal--delay-3">
                 <div class="card neo-card h-100">
+                    <div class="overflow-hidden" style="height: 200px;">
+                        <img src="{{ asset('images/photos/Home/Advanced Testing Equipment.jpeg') }}" 
+                             alt="Advanced Testing Equipment" 
+                             class="w-100 h-100" 
+                             style="object-fit: cover;" 
+                             loading="lazy" 
+                             width="400" height="200">
+                    </div>
                     <div class="card-body p-4 text-center">
-                        <div class="mb-3">
-                            <i class="bi bi-file-earmark-check-fill text-neo-lime" style="font-size: 3.5rem;"></i>
-                        </div>
                         <h4 class="text-neo-navy mb-3">ISO Accredited Reports</h4>
                         <p class="mb-3">Detailed test reports with full compliance to international standards including ASTM, BS, and AASHTO specifications.</p>
                         <a href="{{ route('about.index') }}" class="btn btn-outline-primary">Learn More</a>
@@ -118,6 +134,7 @@
             <button class="category-pill" data-category="aggregates">Aggregates Testing</button>
             <button class="category-pill" data-category="asphalt">Asphalt Testing</button>
             <button class="category-pill" data-category="water">Water Testing</button>
+            <button class="category-pill" data-category="contracting">General Contracting</button>
         </div>
         
         <!-- Solution Cards Container -->
@@ -126,7 +143,15 @@
             <div class="solutions-group" data-category="concrete">
                 <div class="row g-4">
                     <div class="col-md-6">
-                        <div class="card neo-card solution-card">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="overflow-hidden" style="height: 180px;">
+                                <img src="{{ asset('images/photos/Home/Compressive Strength Testing.jpg') }}" 
+                                     alt="Compressive Strength Testing" 
+                                     class="w-100 h-100" 
+                                     style="object-fit: cover;" 
+                                     loading="lazy" 
+                                     width="400" height="180">
+                            </div>
                             <div class="card-body p-4">
                                 <h5 class="text-neo-navy mb-3">Compressive Strength Testing</h5>
                                 <p class="mb-3">Testing of concrete cubes and cylinders for strength analysis.</p>
@@ -140,7 +165,15 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card neo-card solution-card">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="overflow-hidden" style="height: 180px;">
+                                <img src="{{ asset('images/photos/Home/Fresh Concrete Testing.jpg') }}" 
+                                     alt="Fresh Concrete Testing" 
+                                     class="w-100 h-100" 
+                                     style="object-fit: cover;" 
+                                     loading="lazy" 
+                                     width="400" height="180">
+                            </div>
                             <div class="card-body p-4">
                                 <h5 class="text-neo-navy mb-3">Fresh Concrete Testing</h5>
                                 <p class="mb-3">Field testing services for fresh concrete properties.</p>
@@ -160,7 +193,15 @@
             <div class="solutions-group d-none" data-category="soil">
                 <div class="row g-4">
                     <div class="col-md-6">
-                        <div class="card neo-card solution-card">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="overflow-hidden" style="height: 180px;">
+                                <img src="{{ asset('images/photos/Home/Soil Classification.webp') }}" 
+                                     alt="Soil Classification" 
+                                     class="w-100 h-100" 
+                                     style="object-fit: cover;" 
+                                     loading="lazy" 
+                                     width="400" height="180">
+                            </div>
                             <div class="card-body p-4">
                                 <h5 class="text-neo-navy mb-3">Soil Classification</h5>
                                 <p class="mb-3">Complete soil classification and characterization services.</p>
@@ -174,7 +215,15 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card neo-card solution-card">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="overflow-hidden" style="height: 180px;">
+                                <img src="{{ asset('images/photos/Home/Compaction & CBR Testing.jpg') }}" 
+                                     alt="Compaction and CBR Testing" 
+                                     class="w-100 h-100" 
+                                     style="object-fit: cover;" 
+                                     loading="lazy" 
+                                     width="400" height="180">
+                            </div>
                             <div class="card-body p-4">
                                 <h5 class="text-neo-navy mb-3">Compaction & CBR Testing</h5>
                                 <p class="mb-3">Standard and modified Proctor, CBR testing services.</p>
@@ -193,7 +242,15 @@
             <div class="solutions-group d-none" data-category="aggregates">
                 <div class="row g-4">
                     <div class="col-md-6">
-                        <div class="card neo-card solution-card">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="overflow-hidden" style="height: 180px;">
+                                <img src="{{ asset('images/photos/Home/Aggregate Physical Properties.jpg') }}" 
+                                     alt="Aggregate Physical Properties Testing" 
+                                     class="w-100 h-100" 
+                                     style="object-fit: cover;" 
+                                     loading="lazy" 
+                                     width="400" height="180">
+                            </div>
                             <div class="card-body p-4">
                                 <h5 class="text-neo-navy mb-3">Aggregate Physical Properties</h5>
                                 <p class="mb-3">Testing for physical characteristics of aggregates.</p>
@@ -207,7 +264,15 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card neo-card solution-card">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="overflow-hidden" style="height: 180px;">
+                                <img src="{{ asset('images/photos/Home/Aggregate Strength Testing.avif') }}" 
+                                     alt="Aggregate Strength Testing" 
+                                     class="w-100 h-100" 
+                                     style="object-fit: cover;" 
+                                     loading="lazy" 
+                                     width="400" height="180">
+                            </div>
                             <div class="card-body p-4">
                                 <h5 class="text-neo-navy mb-3">Aggregate Strength Testing</h5>
                                 <p class="mb-3">Mechanical strength and durability assessment.</p>
@@ -226,7 +291,15 @@
             <div class="solutions-group d-none" data-category="asphalt">
                 <div class="row g-4">
                     <div class="col-md-6">
-                        <div class="card neo-card solution-card">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="overflow-hidden" style="height: 180px;">
+                                <img src="{{ asset('images/photos/Home/Asphalt Mix Design.jpg') }}" 
+                                     alt="Asphalt Mix Design" 
+                                     class="w-100 h-100" 
+                                     style="object-fit: cover;" 
+                                     loading="lazy" 
+                                     width="400" height="180">
+                            </div>
                             <div class="card-body p-4">
                                 <h5 class="text-neo-navy mb-3">Asphalt Mix Design</h5>
                                 <p class="mb-3">Marshall stability and mix design testing.</p>
@@ -240,7 +313,15 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card neo-card solution-card">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="overflow-hidden" style="height: 180px;">
+                                <img src="{{ asset('images/photos/Home/Bitumen Testing.webp') }}" 
+                                     alt="Bitumen Testing" 
+                                     class="w-100 h-100" 
+                                     style="object-fit: cover;" 
+                                     loading="lazy" 
+                                     width="400" height="180">
+                            </div>
                             <div class="card-body p-4">
                                 <h5 class="text-neo-navy mb-3">Bitumen Testing</h5>
                                 <p class="mb-3">Comprehensive bitumen binder characterization.</p>
@@ -259,7 +340,15 @@
             <div class="solutions-group d-none" data-category="water">
                 <div class="row g-4">
                     <div class="col-md-6">
-                        <div class="card neo-card solution-card">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="overflow-hidden" style="height: 180px;">
+                                <img src="{{ asset('images/photos/Home/Physical Water Testing.avif') }}" 
+                                     alt="Physical Water Testing" 
+                                     class="w-100 h-100" 
+                                     style="object-fit: cover;" 
+                                     loading="lazy" 
+                                     width="400" height="180">
+                            </div>
                             <div class="card-body p-4">
                                 <h5 class="text-neo-navy mb-3">Physical Water Testing</h5>
                                 <p class="mb-3">Physical and appearance-based water quality tests.</p>
@@ -273,7 +362,15 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card neo-card solution-card">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="overflow-hidden" style="height: 180px;">
+                                <img src="{{ asset('images/photos/Home/Chemical Water Analysis.jpg') }}" 
+                                     alt="Chemical Water Analysis" 
+                                     class="w-100 h-100" 
+                                     style="object-fit: cover;" 
+                                     loading="lazy" 
+                                     width="400" height="180">
+                            </div>
                             <div class="card-body p-4">
                                 <h5 class="text-neo-navy mb-3">Chemical Water Analysis</h5>
                                 <p class="mb-3">Complete chemical composition analysis.</p>
@@ -288,6 +385,26 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="solutions-group d-none" data-category="contracting">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="card neo-card solution-card h-100">
+                            <div class="card-body p-4 text-center">
+                                <i class="bi bi-building text-neo-lime" style="font-size: 4rem;"></i>
+                                <h5 class="text-neo-navy mt-4 mb-3">General Contracting Services</h5>
+                                <p class="mb-3">Reliable and high-quality contracting services tailored to project requirements.</p>
+                                <ul class="text-start mb-4">
+                                    <li>Project planning & coordination</li>
+                                    <li>Construction management</li>
+                                    <li>Quality execution & delivery</li>
+                                </ul>
+                                <a href="{{ route('services.contracting') }}" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -297,7 +414,7 @@
     <div class="container">
         <h2 class="section-title text-center mb-5">Our Testing Capabilities</h2>
         <div class="row g-3">
-            @foreach(['Concrete Lab and Field Testing', 'Soil Lab and Field Testing', 'Aggregates Lab and Field Testing', 'Asphalt Lab and Field Testing', 'Water Lab Testing', 'Compressive Strength Testing', 'CBR & Compaction Testing', 'Marshall Stability Testing', 'Core Sampling & Analysis', 'Chemical Analysis'] as $scope)
+            @foreach(['Concrete Lab and Field Testing', 'Soil Lab and Field Testing', 'Aggregates Lab and Field Testing', 'Asphalt Lab and Field Testing', 'Water Lab Testing', 'General Contracting', 'Compressive Strength Testing', 'CBR & Compaction Testing', 'Marshall Stability Testing', 'Core Sampling & Analysis', 'Chemical Analysis'] as $scope)
             <div class="col-md-6 col-lg-4">
                 <div class="card neo-card h-100">
                     <div class="card-body p-3 d-flex align-items-center">
@@ -349,11 +466,16 @@
                 </div>
             </div>
             <div class="col-lg-6 mt-5 mt-lg-0">
-                <div class="card neo-card">
-                    <div class="card-body p-5 text-center">
-                        <i class="bi bi-speedometer2 text-neo-lime" style="font-size: 10rem;"></i>
-                        <h5 class="text-neo-navy mt-4 mb-0">Advanced Testing Equipment</h5>
-                        <p class="text-neo-navy mt-2">Modern Laboratory Infrastructure</p>
+                <div class="card neo-card overflow-hidden">
+                    <img src="{{ asset('images/photos/Home/Advanced Testing Equipment.jpeg') }}" 
+                         alt="Advanced Testing Equipment" 
+                         class="w-100" 
+                         style="aspect-ratio: 4/3; object-fit: cover;" 
+                         loading="lazy" 
+                         width="600" height="450">
+                    <div class="card-body p-4 text-center">
+                        <h5 class="text-neo-navy mb-0">Advanced Testing Equipment</h5>
+                        <p class="text-neo-navy mt-2 mb-0">Modern Laboratory Infrastructure</p>
                     </div>
                 </div>
             </div>

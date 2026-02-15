@@ -35,66 +35,36 @@
     <div class="container">
         <h2 class="section-title text-center mb-5 reveal">Our Testing Services</h2>
         
+        @php
+            $services = [
+                ['image' => 'Sieve Analysis.jpg', 'title' => 'Sieve Analysis', 'desc' => 'Particle size distribution and gradation analysis'],
+                ['image' => 'Flakiness & Elongation Index.avif', 'title' => 'Flakiness & Elongation Index', 'desc' => 'Particle shape and surface characteristics testing'],
+                ['image' => 'Aggregate Impact Value.jpg', 'title' => 'Aggregate Impact Value', 'desc' => 'Resistance to impact loads and toughness testing'],
+                ['image' => 'Specific Gravity.jpeg', 'title' => 'Specific Gravity', 'desc' => 'Density characteristics and quality assessment'],
+                ['image' => 'Moisture Content.webp', 'title' => 'Moisture Content', 'desc' => 'Water content analysis for proper mix design'],
+                ['image' => 'Size Distribution.webp', 'title' => 'Size Distribution', 'desc' => 'Comprehensive gradation and sizing analysis'],
+            ];
+        @endphp
+        
         <div class="row g-4">
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-1">
+            @foreach($services as $index => $service)
+            <div class="col-md-6 col-lg-4 reveal reveal--delay-{{ ($index % 6) + 1 }}">
                 <div class="card neo-card h-100">
+                    <div class="overflow-hidden" style="height: 180px;">
+                        <img src="{{ asset('images/Aggregates Testing/' . $service['image']) }}" 
+                             alt="{{ $service['title'] }}" 
+                             class="w-100 h-100" 
+                             style="object-fit: cover;" 
+                             loading="lazy" 
+                             width="400" height="180">
+                    </div>
                     <div class="card-body text-center">
-                        <i class="bi bi-graph-up text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Sieve Analysis</h5>
-                        <p class="mb-0">Particle size distribution and gradation analysis</p>
+                        <h5 class="text-neo-navy mt-2 mb-3">{{ $service['title'] }}</h5>
+                        <p class="mb-0">{{ $service['desc'] }}</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-2">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-rulers text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Flakiness & Elongation Index</h5>
-                        <p class="mb-0">Particle shape and surface characteristics testing</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-3">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-hammer text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Aggregate Impact Value</h5>
-                        <p class="mb-0">Resistance to impact loads and toughness testing</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-4">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-box text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Specific Gravity</h5>
-                        <p class="mb-0">Density characteristics and quality assessment</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-5">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-water text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Moisture Content</h5>
-                        <p class="mb-0">Water content analysis for proper mix design</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-4 reveal reveal--delay-6">
-                <div class="card neo-card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-grid-3x3 text-neo-lime" style="font-size: 3rem;"></i>
-                        <h5 class="text-neo-navy mt-3 mb-3">Size Distribution</h5>
-                        <p class="mb-0">Comprehensive gradation and sizing analysis</p>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         
         <div class="row mt-4">

@@ -19,6 +19,7 @@
                     <li><a href="{{ route('services.aggregates') }}">Aggregates Testing</a></li>
                     <li><a href="{{ route('services.asphalt') }}">Asphalt Testing</a></li>
                     <li><a href="{{ route('services.water') }}">Water Testing</a></li>
+                    <li><a href="{{ route('services.contracting') }}">General Contracting</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-4">

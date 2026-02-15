@@ -24,24 +24,13 @@
                         <li><a class="dropdown-item" href="{{ route('services.aggregates') }}">Aggregates Lab and Field Testing</a></li>
                         <li><a class="dropdown-item" href="{{ route('services.asphalt') }}">Asphalt Lab and Field Testing</a></li>
                         <li><a class="dropdown-item" href="{{ route('services.water') }}">Water Lab Testing</a></li>
+                        <li><a class="dropdown-item" href="{{ route('services.contracting') }}">General Contracting</a></li>
                     </ul>
                 </li>
                 
                 <!-- Partners -->
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('partners.*') ? 'active' : '' }}" href="{{ route('partners.index') }}">Partners</a>
-                </li>
-                
-                <!-- License Validation Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle {{ request()->routeIs('license.*') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        License Validation
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('license.system') }}">System Certification</a></li>
-                        <li><a class="dropdown-item" href="{{ route('license.equipment') }}">Equipment Certification</a></li>
-                        <li><a class="dropdown-item" href="{{ route('license.personal') }}">Personal Certification</a></li>
-                    </ul>
                 </li>
                 
                 <!-- Contact Us -->

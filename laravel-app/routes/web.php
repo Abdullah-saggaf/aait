@@ -33,35 +33,23 @@ Route::get('/services/water', function () {
     return view('services.water');
 })->name('services.water');
 
+Route::get('/services/contracting', function () {
+    return view('services.contracting');
+})->name('services.contracting');
+
 // Partners
 Route::get('/partners', function () {
     $partners = [
-        'Saudi Aramco',
-        'SABIC',
-        'Metals Services Company',
-        'Petro Rabigh',
-        'Saudi Electricity Company',
-        'Ma\'aden',
-        'SWCC - Saline Water Conversion Corporation',
-        'Aramco Oil Refineries',
-        'Saudi Arabian Mining Company',
-        'National Industrialization Company'
+        ['name' => 'Saudi Aramco', 'logo' => 'saudi-aramco.svg'],
+        ['name' => 'SABIC', 'logo' => 'Logo_of_Sabic.svg.svg'],
+        ['name' => 'Petro Rabigh', 'logo' => 'petro-rabigh-logo-png_seeklogo-310872.svg'],
+        ['name' => 'Saudi Electricity Company', 'logo' => 'Logo_Saudi_Electric_Company.svg.svg'],
+        ['name' => 'Ma\'aden - Saudi Arabian Mining Company', 'logo' => '2060.SR_BIG.svg'],
+        ['name' => 'SWCC - Saline Water Conversion Corporation', 'logo' => 'SWCC - Saline Water Conversion Corporation.png'],
+        ['name' => 'National Industrialization Company', 'logo' => 'idNZXI8qFc_1770987352319.svg'],
     ];
     return view('partners.index', compact('partners'));
 })->name('partners.index');
-
-// License Validation
-Route::get('/license/system', function () {
-    return view('license.system');
-})->name('license.system');
-
-Route::get('/license/equipment', function () {
-    return view('license.equipment');
-})->name('license.equipment');
-
-Route::get('/license/personal', function () {
-    return view('license.personal');
-})->name('license.personal');
 
 // Contact
 Route::get('/contact', function () {

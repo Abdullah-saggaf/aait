@@ -15,15 +15,20 @@
 <section class="py-5 bg-white">
     <div class="container">
         
-        <div class="row g-4">
+        <div class="row g-4 justify-content-center">
             @foreach($partners as $partner)
-            <div class="col-md-6 col-lg-4">
+            <div class="col-6 col-md-4 col-lg-3">
                 <div class="card neo-card h-100">
-                    <div class="card-body text-center p-4">
-                        <div class="mb-3" style="height: 60px; display: flex; align-items: center; justify-content: center;">
-                            <i class="bi bi-building text-neo-lime" style="font-size: 3rem;"></i>
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center p-4">
+                        <div class="mb-3" style="height: 80px; width: 100%; display: flex; align-items: center; justify-content: center;">
+                            <img src="{{ asset('images/partners/' . $partner['logo']) }}" 
+                                 alt="{{ $partner['name'] }} Logo" 
+                                 class="img-fluid" 
+                                 style="max-height: 80px; max-width: 100%; object-fit: contain;" 
+                                 loading="lazy"
+                                 width="150" height="80">
                         </div>
-                        <h5 class="text-neo-navy mb-0">{{ $partner }}</h5>
+                        <h6 class="text-neo-navy text-center mb-0 mt-auto">{{ $partner['name'] }}</h6>
                     </div>
                 </div>
             </div>
