@@ -21,7 +21,7 @@
                     <h6 class="text-neo-navy mb-3">
                         <i class="bi bi-geo-alt text-neo-navy me-2"></i>
                         <strong>Address:</strong> Al Khobar, Eastern Province, Kingdom of Saudi Arabia 
-                        <a href="https://maps.google.com/?q=AAIT+Materials+Testing+Laboratory+Al+Khobar" target="_blank" class="text-neo-lime ms-2">( Google Map )</a>
+                        <a href="https://maps.google.com/?q=AAIT+Materials+Testing+Laboratory+Al+Khobar" target="_blank" class="text-neo-lime ms-2">(Google Map)</a>
                     </h6>
                 </div>
                 
@@ -42,24 +42,19 @@
                     </p>
                 </div>
                 
+                
+        
                 <div class="mb-3">
                     <p class="text-neo-navy mb-2">
-                        <i class="bi bi-phone text-neo-navy me-2"></i>
-                        +966 13 802 4433
+                        <i class="bi bi-envelope text-neo-navy me-2"></i>
+                        info@advancedinspection.com.sa
                     </p>
                 </div>
                 
                 <div class="mb-3">
                     <p class="text-neo-navy mb-2">
                         <i class="bi bi-envelope text-neo-navy me-2"></i>
-                        info@aait-lab.com
-                    </p>
-                </div>
-                
-                <div class="mb-3">
-                    <p class="text-neo-navy mb-2">
-                        <i class="bi bi-envelope text-neo-navy me-2"></i>
-                        sales@aait-lab.com
+                        sales@advancedinspection.com.sa
                     </p>
                 </div>
             </div>

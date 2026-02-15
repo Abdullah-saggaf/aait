@@ -864,3 +864,56 @@ iframe {
   animation: slideInUp 0.6s ease-out;
 }
 
+/* ============================================================
+   WHATSAPP FLOATING BUTTON
+============================================================ */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 52px;
+  height: 52px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+  z-index: 1000;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.whatsapp-float:hover {
+  background: #20bd5a;
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+}
+
+.whatsapp-float:focus {
+  outline: 3px solid var(--neo-lime);
+  outline-offset: 3px;
+  color: #fff;
+}
+
+.whatsapp-float:active {
+  transform: scale(1.02);
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .whatsapp-float svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
