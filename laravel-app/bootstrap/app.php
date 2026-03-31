@@ -11,8 +11,15 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        // Trust all proxies (required for Render.com, Heroku, etc.)
-        $middleware->trustProxies(at: '*');
+        // Trust proxy headers from configured infrastructure.
+        $middleware->trustProxies(at: env('TRUSTED_PROXIES', '*'));
+
+        // Apply secure headers to all app responses.
+        $middleware->append(App\Http\Middleware\SecurityHeaders::class);
+
+        // Apply named global throttles for browser and API traffic.
+        $middleware->web(append: ['throttle:web']);
+        $middleware->api(prepend: ['throttle:api']);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
