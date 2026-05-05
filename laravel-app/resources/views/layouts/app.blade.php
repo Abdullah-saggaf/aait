@@ -6,6 +6,13 @@
     <title>@yield('title', 'Calibration & Inspection Services') - AAIT</title>
     <meta name="description" content="@yield('description', 'ISO/IEC 17025:2005 Calibration & Inspection Services across Saudi Arabia. Serving industries including Saudi Aramco.')">
     
+    <!-- Favicon and PWA -->
+    <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
+    <link rel="alternate icon" href="{{ asset('favicon-32x32.png') }}" sizes="32x32">
+    <link rel="icon" href="{{ asset('favicon-32x32.png') }}" sizes="32x32" type="image/png">
+    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+    <meta name="theme-color" content="#151741">
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
