@@ -37,6 +37,26 @@ Route::get('/services/contracting', function () {
     return view('services.contracting');
 })->name('services.contracting');
 
+Route::get('/services/calibration', function () {
+    return view('services.calibration');
+})->name('services.calibration');
+
+Route::get('/services/inspection', function () {
+    return view('services.inspection');
+})->name('services.inspection');
+
+Route::get('/services/maintenance', function () {
+    return view('services.maintenance');
+})->name('services.maintenance');
+
+Route::get('/services/training', function () {
+    return view('services.training');
+})->name('services.training');
+
+Route::get('/services/certification', function () {
+    return view('services.certification');
+})->name('services.certification');
+
 // Partners
 Route::get('/partners', function () {
     $partners = [

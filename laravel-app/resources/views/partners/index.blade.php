@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Our Partners')
-@section('description', 'We proudly serve leading organizations across Saudi Arabia including Saudi Aramco, SABIC, and other major industrial companies.')
+@section('title', 'Partners | AAIT Technical Services in Khobar, Saudi Arabia')
+@section('description', 'View AAIT’s partners and client network supporting technical services and industry projects across Saudi Arabia and Khobar.')
+@section('keywords', 'AAIT partners, AAIT Khobar, industrial partners Saudi Arabia, technical services Khobar, client network Khobar')
 
 @section('content')
 <!-- Page Hero -->

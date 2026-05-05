@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Asphalt Lab and Field Testing')
-@section('description', 'Complete testing services for asphalt materials and pavements including bitumen testing, mix design, and pavement evaluation.')
+@section('title', 'Asphalt Lab and Field Testing | AAIT in Khobar, Saudi Arabia')
+@section('description', 'Complete testing services for asphalt materials and pavements, including bitumen testing, mix design, and pavement evaluation for clients in Khobar, Saudi Arabia.')
+@section('keywords', 'asphalt testing Khobar, AAIT asphalt testing, pavement testing, technical services Khobar Saudi Arabia')
 
 @section('content')
 <!-- Page Hero -->

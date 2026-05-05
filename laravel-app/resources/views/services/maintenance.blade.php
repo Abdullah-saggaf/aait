@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Maintenance & Repair Services')
-@section('description', 'Expert maintenance and repair services for measuring instruments and calibration equipment.')
+@section('title', 'Maintenance & Repair Services | AAIT in Khobar, Saudi Arabia')
+@section('description', 'Expert maintenance and repair services for measuring instruments and calibration equipment serving clients in Khobar, Saudi Arabia.')
+@section('keywords', 'maintenance and repair Khobar, AAIT maintenance, calibration equipment repair, technical services Khobar Saudi Arabia')
 
 @section('content')
 <!-- Page Hero -->

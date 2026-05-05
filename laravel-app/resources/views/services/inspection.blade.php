@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Inspection Services')
-@section('description', 'Professional inspection services ensuring your equipment and systems meet required standards and specifications.')
+@section('title', 'Inspection Services | AAIT in Khobar, Saudi Arabia')
+@section('description', 'Professional inspection services ensuring your equipment and systems meet required standards and specifications for clients in Khobar, Saudi Arabia.')
+@section('keywords', 'inspection services Khobar, AAIT inspection, equipment inspection Saudi Arabia, technical services Khobar')
 
 @section('content')
 <!-- Page Hero -->

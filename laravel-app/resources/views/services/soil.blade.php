@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Soil Lab and Field Testing')
-@section('description', 'Comprehensive geotechnical testing and soil analysis services for construction projects. Laboratory and field testing for soil characterization.')
+@section('title', 'Soil Lab and Field Testing | AAIT in Khobar, Saudi Arabia')
+@section('description', 'Comprehensive geotechnical testing and soil analysis services for construction projects in Khobar, Saudi Arabia, including laboratory and field testing for soil characterization.')
+@section('keywords', 'soil testing Khobar, geotechnical testing Khobar, AAIT soil analysis, professional services Khobar Saudi Arabia')
 
 @section('content')
 <!-- Page Hero -->

@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Concrete Lab and Field Testing')
-@section('description', 'Comprehensive concrete testing services for quality control and compliance. Laboratory and field testing for fresh and hardened concrete.')
+@section('title', 'Concrete Lab and Field Testing | AAIT in Khobar, Saudi Arabia')
+@section('description', 'Comprehensive concrete testing services for quality control and compliance, serving clients in Khobar, Saudi Arabia with laboratory and field testing for fresh and hardened concrete.')
+@section('keywords', 'concrete testing Khobar, AAIT concrete testing, concrete lab and field testing, professional services Khobar Saudi Arabia')
 
 @section('content')
 <!-- Page Hero -->

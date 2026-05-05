@@ -3,15 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Calibration & Inspection Services') - AAIT</title>
-    <meta name="description" content="@yield('description', 'ISO/IEC 17025:2005 Calibration & Inspection Services across Saudi Arabia. Serving industries including Saudi Aramco.')">
-    
+    @php
+        $siteName = 'AAIT';
+        $defaultTitle = 'AAIT | Professional Technical Services in Khobar, Saudi Arabia';
+        $defaultDescription = 'AAIT provides professional technical services and reliable business solutions for clients in Khobar, Saudi Arabia, with a focus on quality, trust, and long-term support.';
+        $siteUrl = config('app.url') ?: 'https://advancedinspection.com.sa';
+
+        if (str_contains($siteUrl, 'localhost') || str_contains($siteUrl, '127.0.0.1')) {
+            $siteUrl = 'https://advancedinspection.com.sa';
+        }
+
+        $assetBaseUrl = rtrim($siteUrl, '/');
+        $currentPath = trim(request()->path(), '/');
+        $canonicalUrl = $currentPath === '' ? $siteUrl : $siteUrl . '/' . $currentPath;
+
+        $pageTitle = trim($__env->yieldContent('title', $defaultTitle));
+        $pageDescription = trim($__env->yieldContent('description', $defaultDescription));
+        $pageKeywords = trim($__env->yieldContent('keywords', 'AAIT, AAIT Khobar, technical services Khobar, professional services Khobar Saudi Arabia, business solutions Khobar, Saudi Arabia technical solutions'));
+        $pageOgImage = trim($__env->yieldContent('og_image', $assetBaseUrl . '/images/seo/aait-social-preview.png'));
+        $pageOgTitle = trim($__env->yieldContent('og_title', $pageTitle));
+        $pageOgDescription = trim($__env->yieldContent('og_description', $pageDescription));
+        $pageOgUrl = trim($__env->yieldContent('og_url', $canonicalUrl));
+        $pageOgType = trim($__env->yieldContent('og_type', 'website'));
+
+        $schema = [
+            '@context' => 'https://schema.org',
+            '@graph' => [
+                [
+                    '@type' => 'Organization',
+                    '@id' => $canonicalUrl . '#organization',
+                    'name' => $siteName,
+                    'url' => $canonicalUrl,
+                    'logo' => $assetBaseUrl . '/images/logo5.svg',
+                ],
+                [
+                    '@type' => 'LocalBusiness',
+                    '@id' => $canonicalUrl . '#localbusiness',
+                    'name' => $siteName,
+                    'url' => $canonicalUrl,
+                    'image' => $pageOgImage,
+                    'logo' => $assetBaseUrl . '/images/logo5.svg',
+                    'telephone' => '+966 50 017 6475',
+                    'email' => 'info@advancedinspection.com.sa',
+                    'address' => [
+                        '@type' => 'PostalAddress',
+                        'addressLocality' => 'Khobar',
+                        'addressRegion' => 'Eastern Province',
+                        'addressCountry' => 'SA',
+                    ],
+                    'areaServed' => [
+                        'Khobar, Saudi Arabia',
+                        'Saudi Arabia',
+                    ],
+                ],
+            ],
+        ];
+    @endphp
+    <title>{{ $pageTitle }}</title>
+    <meta name="description" content="{{ $pageDescription }}">
+    <meta name="keywords" content="{{ $pageKeywords }}">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <link rel="canonical" href="{{ $canonicalUrl }}">
+
+    <meta property="og:title" content="{{ $pageOgTitle }}">
+    <meta property="og:description" content="{{ $pageOgDescription }}">
+    <meta property="og:image" content="{{ $pageOgImage }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="{{ $pageOgUrl }}">
+    <meta property="og:type" content="{{ $pageOgType }}">
+    <meta property="og:site_name" content="{{ $siteName }}">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $pageOgTitle }}">
+    <meta name="twitter:description" content="{{ $pageOgDescription }}">
+    <meta name="twitter:image" content="{{ $pageOgImage }}">
+
+    <script type="application/ld+json">{!! json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+
     <!-- Favicon and PWA -->
     <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
     <link rel="alternate icon" href="{{ asset('favicon-32x32.png') }}" sizes="32x32">
     <link rel="icon" href="{{ asset('favicon-32x32.png') }}" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="{{ asset('favicon-192x192.png') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
     <meta name="theme-color" content="#151741">
+    <meta name="msapplication-TileColor" content="#151741">
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">

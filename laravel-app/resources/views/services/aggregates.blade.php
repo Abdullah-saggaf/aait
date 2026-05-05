@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Aggregates Lab and Field Testing')
-@section('description', 'Complete testing services for construction aggregates including coarse and fine aggregates for concrete and asphalt applications.')
+@section('title', 'Aggregates Lab and Field Testing | AAIT in Khobar, Saudi Arabia')
+@section('description', 'Complete testing services for construction aggregates, supporting concrete and asphalt applications for clients in Khobar, Saudi Arabia.')
+@section('keywords', 'aggregates testing Khobar, AAIT aggregates testing, construction materials testing, technical services Khobar Saudi Arabia')
 
 @section('content')
 <!-- Page Hero -->

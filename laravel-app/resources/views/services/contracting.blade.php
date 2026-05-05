@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'General Contracting')
-@section('description', 'Reliable and high-quality General Contracting services tailored to project requirements across planning, coordination, and execution.')
+@section('title', 'General Contracting | AAIT in Khobar, Saudi Arabia')
+@section('description', 'Reliable and high-quality general contracting services tailored to project requirements in Khobar, Saudi Arabia across planning, coordination, and execution.')
+@section('keywords', 'general contracting Khobar, AAIT general contracting, project support Khobar Saudi Arabia, business solutions Khobar')
 
 @section('content')
 <!-- Page Hero -->

@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Water Lab Testing')
-@section('description', 'Comprehensive water quality testing and analysis services for potable water, concrete mixing water, and wastewater.')
+@section('title', 'Water Lab Testing | AAIT in Khobar, Saudi Arabia')
+@section('description', 'Comprehensive water quality testing and analysis services for potable water, concrete mixing water, and wastewater in Khobar, Saudi Arabia.')
+@section('keywords', 'water testing Khobar, water quality analysis Khobar, AAIT water lab testing, technical services Khobar Saudi Arabia')
 
 @section('content')
 <!-- Page Hero -->

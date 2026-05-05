@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Certification Services')
-@section('description', 'System, equipment, and personal certification services ensuring compliance with industry standards.')
+@section('title', 'Certification Services | AAIT in Khobar, Saudi Arabia')
+@section('description', 'System, equipment, and personnel certification services ensuring compliance with industry standards for clients in Khobar, Saudi Arabia.')
+@section('keywords', 'certification services Khobar, AAIT certification, equipment certification Saudi Arabia, technical services Khobar')
 
 @section('content')
 <!-- Page Hero -->

@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Training Services')
-@section('description', 'Professional training programs for calibration, measurement techniques, and quality management.')
+@section('title', 'Training Services | AAIT Technical Training in Khobar, Saudi Arabia')
+@section('description', 'Professional training programs for calibration, measurement techniques, and quality management for teams in Khobar, Saudi Arabia.')
+@section('keywords', 'training services Khobar, AAIT training, calibration training, quality management training Saudi Arabia')
 
 @section('content')
 <!-- Page Hero -->

@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Home - AAIT Materials Testing Laboratory')
-@section('description', 'Comprehensive materials testing laboratory services for concrete, soil, aggregates, asphalt, and water. ISO/IEC 17025 accredited testing across Saudi Arabia.')
+@section('title', 'AAIT | Professional Technical Services in Khobar, Saudi Arabia')
+@section('description', 'AAIT provides professional technical services and reliable business solutions for clients in Khobar, Saudi Arabia, with a focus on quality, trust, and long-term support.')
+@section('keywords', 'AAIT, AAIT Khobar, professional technical services, technical services Khobar, business solutions Khobar, Saudi Arabia technical solutions')
 
 @section('content')
 <!-- HERO SECTION -->

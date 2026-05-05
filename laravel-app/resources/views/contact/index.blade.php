@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Contact Us - AAIT Materials Testing Laboratory')
-@section('description', 'Contact AAIT for comprehensive materials testing services in Saudi Arabia. ISO/IEC 17025 accredited laboratory in Al Khobar.')
+@section('title', 'Contact AAIT | Khobar, Saudi Arabia')
+@section('description', 'Contact AAIT in Khobar, Saudi Arabia to discuss professional services, technical solutions, business support, and project requirements.')
+@section('keywords', 'Contact AAIT, AAIT Khobar, technical services Khobar Saudi Arabia, business support Khobar, professional services Khobar')
 
 @section('content')
 <!-- Page Hero -->

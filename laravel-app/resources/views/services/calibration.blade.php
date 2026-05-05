@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Calibration Services')
-@section('description', 'Comprehensive calibration services for mechanical, electrical, thermal, and dimensional instruments with full traceability to international standards.')
+@section('title', 'Calibration Services | AAIT in Khobar, Saudi Arabia')
+@section('description', 'Comprehensive calibration services for mechanical, electrical, thermal, and dimensional instruments with full traceability to international standards for clients in Khobar, Saudi Arabia.')
+@section('keywords', 'calibration services Khobar, AAIT calibration, instrument calibration Saudi Arabia, technical services Khobar Saudi Arabia')
 
 @section('content')
 <!-- Page Hero -->

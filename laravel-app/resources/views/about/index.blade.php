@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'About Us - AAIT Materials Testing Laboratory')
-@section('description', 'ISO/IEC 17025 accredited materials testing laboratory serving construction projects across Saudi Arabia since 2005.')
+@section('title', 'About AAIT | Trusted Company in Khobar, Saudi Arabia')
+@section('description', 'Learn more about AAIT, a trusted company based in Khobar, Saudi Arabia, delivering professional services, reliable support, and quality-focused solutions for clients.')
+@section('keywords', 'About AAIT, AAIT Khobar, trusted company in Khobar, Saudi Arabia, professional services Khobar Saudi Arabia, business solutions Khobar')
 
 @section('content')
 <!-- Page Hero -->
@@ -528,8 +529,9 @@ overview of our services, please refer to the services section.</p>
 </section>
 @endsection
 
-@section('title', 'About Us')
-@section('description', 'AAIT provides ISO/IEC 17025:2005 calibration services across Saudi Arabia. Established 2005, serving Saudi Aramco and major industries.')
+@section('title', 'About AAIT | Trusted Company in Khobar, Saudi Arabia')
+@section('description', 'Learn more about AAIT, a trusted company based in Khobar, Saudi Arabia, delivering professional services, reliable support, and quality-focused solutions for clients.')
+@section('keywords', 'About AAIT, AAIT Khobar, trusted company in Khobar, Saudi Arabia, professional services Khobar Saudi Arabia, business solutions Khobar')
 
 @section('content')
 <section class="py-5">

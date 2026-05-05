@@ -1,2 +1,5 @@
+# Production domain: https://advancedinspection.com.sa
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://advancedinspection.com.sa/sitemap.xml
