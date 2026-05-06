@@ -66,7 +66,7 @@
             <div class="col-12 reveal reveal--delay-2">
                 <div class="card border-0 shadow-sm overflow-hidden">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.8!2d50.208!3d26.284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDE3JzAyLjQiTiA1MMKwMTInMjguOCJF!5e0!3m2!1sen!2ssa!4v1234567890" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.0!2d50.1961896!3d26.2368682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49c30037021e8f%3A0x1900bb124d548b12!2sAdvanced%20Analytical%20Inspection%20Testing%20(AAIT)!5e0!3m2!1sen!2ssa!4v1715010000000" 
                         width="100%" 
                         height="450" 
                         style="border:0;" 
