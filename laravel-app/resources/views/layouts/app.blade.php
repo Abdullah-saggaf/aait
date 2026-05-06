@@ -83,12 +83,12 @@
     <script type="application/ld+json">{!! json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
 
     <!-- Favicon and PWA -->
-    <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
-    <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
-    <link rel="alternate icon" href="{{ asset('favicon-32x32.png') }}" sizes="32x32">
-    <link rel="icon" href="{{ asset('favicon-32x32.png') }}" sizes="32x32" type="image/png">
-    <link rel="apple-touch-icon" href="{{ asset('favicon-192x192.png') }}">
-    <link rel="manifest" href="{{ asset('site.webmanifest') }}">
+    <link rel="icon" href="{{ $assetBaseUrl }}/favicon.svg?v=2" type="image/svg+xml">
+    <link rel="icon" href="{{ $assetBaseUrl }}/favicon.ico?v=2" sizes="any">
+    <link rel="alternate icon" href="{{ $assetBaseUrl }}/favicon-32x32.png?v=2" sizes="32x32">
+    <link rel="icon" href="{{ $assetBaseUrl }}/favicon-32x32.png?v=2" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="{{ $assetBaseUrl }}/favicon-192x192.png?v=2">
+    <link rel="manifest" href="{{ $assetBaseUrl }}/site.webmanifest?v=2">
     <meta name="theme-color" content="#151741">
     <meta name="msapplication-TileColor" content="#151741">
 
